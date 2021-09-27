@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Protótipo de site </title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+<!-- rapaziada isso é uma base do que eu fiz, o produto final vai ser mil vezes melhor porém aceito sugestões-->
+<div id="div_a">
+
+<div id="div_b">
+  <u onclick="but_cadastro()">Meu Acesso</u>
+</div>
+
+</div>
+
+<div id="div_ee">
+
+ <div id="div_cadastro" style="display: none;">
+
+   <div id="div_aa">iParking
+     <div id="div_bb">
+       Insira o usuário:<br>
+       <input placeholder="Usuário"><br>
+
+       Insira a senha:<br>
+       <input type="password" placeholder="Senha"><br>
+       
+       <u><b>Manter-me conectado</b></u>
+       <input type="checkbox"><br>
+
+       <button> Entrar </button>
+     </div><br>
+
+     <div id="div_cc">Ainda não tem uma conta?<br><br>
+       <button onclick="but_login()"> Cadastre-se </button>
+     </div>
+   </div>
+
+ </div>
+
+</div> 
+
+</body>
+</html>
+
+<script>
+
+  function but_cadastro(){
+    div_a.style.display ='none';
+    div_cadastro.style.display = 'block';
+  }
+
+  function but_login(){
+    div_ee.style.display = 'none';
+  }
+
+</script>
