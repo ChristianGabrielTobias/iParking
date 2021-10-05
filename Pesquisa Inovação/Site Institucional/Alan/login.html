@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="#FF2121">
+    <div class="header">
+        <div class="conteiner">
+            <h1>iParking</h1>
+            <ul class="navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li>|</li>
+                <li><a href="saibamais.html">Saiba Mais</a></li>
+                <li class="active">Acesse Agora</li>
+            </ul>
+        </div>
+    </div>
+    <div class="conteiner_login">
+        <div class="login">
+            <center>
+            <h1>LOGIN</h1>
+            <div class="divisoria"></div><br><br>
+            <span class="email_senha">Seu E-mail</span><br>
+            <input id="ipt_email" type="text"><br><br>
+            <span class="email_senha">Sua senha</span><br>
+            <input id="ipt_senha" type="password"> <br><br>
+            </center>
+            <input class="check" type="checkbox">
+            <span>Lembrar de mim</span> <br><br><br><br>
+            <center>
+            <button class="btn_logar" onclick="login()">LOGAR</button><br><br><br>
+            Ainda não tem conta?<br>
+            <button class="btn_cadastro"><a href="cadastro.html">Cadastre-se</a></button>
+            </center>
+        </div>
+    </div>
+</body>
+<script>
+    function
+    login(){
+        if(ipt_email.value == 'alan.comidal@bandtec.com.br' && ipt_senha.value == '123456'){
+            window.location.href = "acesso.html";
+        }else(alert('senha ou usuario incorretos'))
+    }
+</script>
+</html>
