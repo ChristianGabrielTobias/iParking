@@ -28,3 +28,22 @@ insert into Funcionário ( nomefuncionário, cargo, cpf, telefonefixo, celular )
 ('Alisson', 'Estagiário', 44742232695, 1131884274, 11943876316);
 
 select * from funcionário;
+
+-- Christian(criação da tabela empresa)
+
+create table empresa(
+    idEmpresa int primary key auto_increment,
+    nomeEmpresa varchar(80),
+    email varchar(45),
+    cnpj char(14),
+    telefone char(10),
+    data_criaçao date,
+    senha varchar(20)
+);
+
+insert into empresa (nomeEmpresa, email, cnpj, telefone, data_criaçao, senha) values
+('EasyParking', 'easy@estacionamento.com.br', '00001234567899', '99999-9999', '2021-09-10', 'easy123'),
+('Park Plus', 'parkplus@estacionamento.com.br', '00009876543211', '12345-5432', '2021-10-01', 'plus0000'),
+('HaVagas?', 'havagas@estacionamento.com.br', '00006547893215', '65415-4125', '2021-06-31', 'vagas999'),
+('vagas ja', 'vagasja@estacionamento.com.br', '000032165474163', '45612-0176', '2021-07-28', '1234vagas');
+

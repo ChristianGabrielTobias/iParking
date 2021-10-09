@@ -1,0 +1,319 @@
+*{
+    font-family:monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 100px;
+    background-color: #FF2121;
+    border: 0px solid;
+}
+
+.conteiner{
+   
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.header .conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+  
+    width: 45%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.header h1{
+    color: white;
+    font-size: 50px;
+    
+}
+
+.navbar li{
+    color:white;
+    font-size: 20px;
+}
+
+
+
+
+.navbar li a{
+    color: white;
+    text-decoration: none;
+}
+
+.div_header_down{
+position: absolute;
+width: 100%;
+height: 103px;
+left: 0px;
+background: #FF2121;
+}
+
+.quem_somos h1{
+    position: absolute;
+width: 350px;
+height: 79px;
+left: 87px;
+top: 997px;
+
+font-family: Righteous;
+font-style: normal;
+font-weight: normal;
+font-size: 64px;
+line-height: 79px;
+
+color: #FF2121;
+}
+
+.quem_somos p{
+    position: absolute;
+width: 1036px;
+height: 140px;
+left: 87px;
+top: 1093px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+}
+
+.quem_somos .saibamais{
+    position: absolute;
+width: 205px;
+height: 42px;
+left: 882px;
+top: 1280px;
+color: white;
+background-color: black;
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 25px;
+text-align: center;
+text-decoration: none;
+
+}
+
+.separar1{
+    position: absolute;
+width: 100%;
+height: 7px;
+left: 0px;
+top: 1445px;
+
+background: #FF2121;
+}
+
+.usabilidade img{
+    position: absolute;
+width: 1035px;
+height: 163px;
+left: 197px;
+top: 1654px;
+
+background: url(image.png);
+}
+
+.usabilidade .nuvem{
+    position: absolute;
+width: 294px;
+height: 27px;
+left: 211px;
+top: 1844px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 22px;
+line-height: 26px;
+
+color: #000000;
+
+}
+
+.usabilidade .nuvem2{
+    position: absolute;
+width: 380px;
+height: 147px;
+left: 156px;
+top: 1919px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+
+color: #4B4B4B;
+}
+
+.usabilidade .real{
+    position: absolute;
+width: 185px;
+height: 78px;
+left: 622px;
+top: 1844px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+
+color: #000000;
+}
+
+.usabilidade .real2{
+    position: absolute;
+width: 319px;
+height: 105px;
+left: 555px;
+top: 1919px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+
+color: #4B4B4B;
+}
+
+.usabilidade .mobilidade{
+    position: absolute;
+width: 297px;
+height: 52px;
+left: 924px;
+top: 1845px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+
+color: #000000;
+
+}
+
+.usabilidade .mobilidade2{
+    position: absolute;
+width: 317px;
+height: 168px;
+left: 917px;
+top: 1919px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+
+color: #4B4B4B;
+}
+
+
+.separar2{
+  
+position: absolute;
+width: 100%;
+height: 8px;
+left: 0px;
+top: 2289px;
+
+background: #FF2121;
+}
+
+.aumentar .titulo{
+    position: absolute;
+    width: 1068px;
+    height: 75px;
+    left: 63px;
+    top: 2449px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 6opx;
+    line-height: 75px;
+    
+    
+    color: #000000;
+}
+
+.fundocalc{
+    position: absolute;
+width: 1314px;
+height: 812px;
+left: 63px;
+top: 2524px;
+
+background: #C4C4C4;
+}
+
+
+.barrinha{
+    position: absolute;
+width: 100%;
+height: 27px;
+left: 0px;
+top: 3518px;
+
+background: #FF2121;
+}
+
+.faleconosco{
+    position: absolute;
+width: 100%;
+height: 843px;
+left: 0px;
+top: 3545px;
+
+background: #000000;
+}
+
+.faleconosco h1{
+    width: 532px;
+height: 70px;
+left: 120px;
+top: 3617px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 50px;
+line-height: 75px;
+text-align: center;
+
+
+color: #FFFFFF;
+
+}
+
+.finalconosco{
+    position: absolute;
+width: 100%;
+height: 131px;
+left: 0px;
+top: 4388px;
+
+background: #FF2121;
+}

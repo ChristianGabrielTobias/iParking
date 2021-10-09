@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="telalogin.css">
+</head>
+
+<body>
+    <!--div para fazer a nav bar da pagina-->
+    <div class="header">
+        <div class="conteiner">
+            <h1> <a style="color: white;" href="telahome.html">iParking</a></h1>
+            
+        </div>
+        <div id="div_login" style="display: block;"> 
+            <center>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+               
+                <span style="color: white; font-size: 30px; font-weight: bolder;">LOGIN</span>
+                <br><br>
+                <div style="height: 1px; width: 30%; background-color: white;"></div>
+                <br><br>
+                <span style="color: white; font-size: 25px; font-weight: bolder;">SEU EMAIL:</span><br><br>
+                <input id="ipt_email" style="width: 30%; height: 30px;" type="email" placeholder="EMAIL"><br><br>
+                <span style="color: white; font-size: 25px; font-weight: bolder;">SUA SENHA:</span><br><br>
+                <input id="ipt_senha" style="width: 30%; height: 30px;" type="password" placeholder="SUA SENHA"><br><br><br>
+                <button onclick = entrar() style="width: 30%; background-color: white; color: red;
+                height: 40px; border: none; font-size: 30px; cursor: pointer;">ENTRAR</button>
+            </center>
+        </div>
+
+       
+
+        <div  id="div_graficos" style=" display: none; width: 100%; height: 700px;">
+            <center>
+       <span style="font-weight: bolder; font-size: 50px;">pagina em construção</span>
+    </center>
+        </div>
+
+</body>
+
+</html>
+<script>
+
+function entrar() {
+    if (ipt_email.value == "adm" && ipt_senha.value == "adm") {
+       
+        div_login.style.display = 'none';
+        div_graficos.style.display = 'block';
+    }
+
+    else{
+        
+        alert("senha ou usuario incorretos")
+    }
+}
+
+</script>

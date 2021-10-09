@@ -1,0 +1,51 @@
+*{
+    font-family:monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 100px;
+    background-color: #FF2121;
+    border: 0px solid;
+}
+
+.conteiner{
+   
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.header .conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+  
+    width: 45%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.header h1{
+    color: white;
+    font-size: 50px;
+    
+}
+
+.navbar li{
+    color:white;
+    font-size: 20px;
+}
+
+
+
+
+.navbar li a{
+    color: white;
+    text-decoration: none;
+}
