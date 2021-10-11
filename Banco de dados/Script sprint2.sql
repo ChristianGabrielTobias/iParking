@@ -47,3 +47,24 @@ insert into empresa (nomeEmpresa, email, cnpj, telefone, data_criaçao, senha) v
 ('HaVagas?', 'havagas@estacionamento.com.br', '00006547893215', '65415-4125', '2021-06-31', 'vagas999'),
 ('vagas ja', 'vagasja@estacionamento.com.br', '000032165474163', '45612-0176', '2021-07-28', '1234vagas');
 
+select * from empresa;
+
+-- Willians(Criação da tabela estacionamento)
+
+create table estacionamento(
+ idEstacionamento int primary key auto_increment,
+ nome VARCHAR(80),
+ rua VARCHAR(80),
+ numero VARCHAR(10),
+ bairro VARCHAR(50),
+ cep CHAR(8),
+ qtdVagas VARCHAR(10)
+ );
+
+insert into estacionamento (nome,rua,numero,bairro,cep,qtdVagas) values
+('EasyParking','Consuelo Corner','807','Vergel do Lago','13092150','42'),
+('Park Plus','Mertz Vista','215','Jardim Apipema','40155200','81'),
+('HaVagas','Alverta Village','528','Bonsucesso','78931000','78'),
+('vagas ja','Chauncey Valleys','365','Park dos Buritis','20521110','69');
+
+select * from estacionamento;
