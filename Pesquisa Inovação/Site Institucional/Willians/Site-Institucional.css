@@ -1,0 +1,157 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 150px;
+    background-color: #8b0000;
+    border: rgb(20, 20, 20) 3px solid;
+}
+
+.container{
+    width: 80%;
+    height: 100%;
+    margin: auto;  
+}
+
+.header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.header .container h1 a{
+    color: whitesmoke;
+    font-size: 60px;
+    text-decoration: none;
+}
+
+.navbar{  
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navbar li{
+    margin-right: 50px;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover{
+   color: black;
+}
+
+.navbar .active a:hover{
+    border: black 3px solid;
+    border-radius: 20px;
+    background-color: white;
+    color: #8b0000;
+    padding: 5px;
+}
+
+.navbar .active a{
+    color: white;
+    border: black 3px solid;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+/**/
+
+.banner {
+    height: 700px;
+    background-image: url('img/estacionamento.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#divisao{
+    height: 10px;
+    background-color: black;
+}
+
+.proposito {
+    height: 450px;
+    background-color: #E5E5E5;
+}
+
+.proposito .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proposito .container h2 {
+    background-color: white;
+    padding: 25px;
+    border-radius: 25px;
+    color: #E6005A;
+}
+
+.proposito .container .mvv div img {
+    height: 100px;
+    
+} 
+
+.proposito .container .mvv {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.proposito .container .mvv div {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.proposito .container .mvv div h3 {
+   color: #E6005A; 
+   font-weight: bolder;
+   margin: 25px 0;
+}
+
+.footer {
+    background-color: #8b0000;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: white;
+}
+
+.message {
+    margin-right: 250px;
+    width: 10%;
+    color: white;
+    font-size: 40px;
+}
+
+.message span {
+    font-weight: bolder;
+}
