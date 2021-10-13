@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>Line Chart</title>
+	<title>Vaga 01</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 	<script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
 	<script src="http://www.chartjs.org/samples/latest/utils.js"></script>
@@ -18,10 +18,7 @@
 
 <body>
 	<div>
-		<h1>Sensor LM35 - Temperatura</h1>
-			<section>
-				<h2>Média: <label id='average'>0.00</label></h2>
-			</section>
+		<h1>Sensor TCRT 5000 - Proximidade</h1>
 			<section style="width:100%">
 				<canvas id="chart"></canvas>
 		<section>
@@ -37,9 +34,9 @@
 			type: 'bar', /*Muda o tipo do grafico, ver o tipo do grafico no site de chartJS*/
 			data: {
 				datasets: [{
-					label: "Temperatura",
+					label: "Ocupado",
 					type: 'bar', /*Tambem musar aqui o tipo do grafico no mesmo da linha 37*/
-					borderColor: ['#ff3232'],
+					borderColor: ['#000000'],
 					backgroundColor: ['#ff7f7f']
 				}]
 			},
@@ -54,7 +51,7 @@
 					yAxes: [{
 						scaleLabel: {
 							display: true,
-							labelString: 'Temperatura'
+							labelString: 'Proximidade'
                         },
                         ticks: {
                             beginAtZero:true
@@ -62,7 +59,7 @@
 					}]
 				},
 				animation: {
-					duration: 0
+					duration: 2000
 				}
 			}
         };
@@ -94,14 +91,17 @@
 
             listTemp.forEach(data => {
                 //Máximo de 60 itens exibidos no gráfico
-                if (chart.data.labels.length == 10 && chart.data.datasets[0].data.length == 10){
+                if (chart.data.labels.length == 5 && chart.data.datasets[0].data.length == 5){
                     chart.data.labels.shift();
                     chart.data.datasets[0].data.shift();
                 }
 
                 chart.data.labels.push(this.time++);
                 chart.data.datasets[0].data.push(parseFloat(data));
-                chart.update();
+                if(data == 1){
+					chart.data.datasets[0].backgroundColor = "#8b0000";
+				}
+				chart.update();
 			});
 			
 			document.getElementById('average').textContent = obj.average;
