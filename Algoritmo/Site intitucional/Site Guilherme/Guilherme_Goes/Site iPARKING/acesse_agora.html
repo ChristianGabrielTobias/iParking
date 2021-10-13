@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intitucional.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="div_cabeçalho_segundario"> 
+    <a href="site_home.html"> 
+        <img style="width: 50px;" src="https://i.pinimg.com/originals/da/e0/92/dae092a545e4c09714ee9842ab15dc10.jpg">
+            </a>
+    </div>
+    <br><br><br><br>
+    <center>
+        <!-- div de login-->
+    <div id="div_login" class="div_login">
+        <h2>Tela de Login</h2>
+        <BR></BR>
+        usuario:
+        <br>
+        <input id="inp_usuario_loguin" placeholder="insira seu usuario" >
+        senha:
+        <br>
+        <input id="inp_senha_loguin" placeholder="insira sua senha" >
+        <br>
+        <button onclick="acessar()">acessar</button>
+         <button onclick="cadastro()">cadastre-se</button>
+    </div>
+    <!-- div de cadastro-->
+    <div id="div_cadastro" class="div_cadastro">
+    <h2>Tela de cadastro</h2>
+    <br><br>
+    insira seu usuario:
+    <input id="inp_usuario" placeholder="insira seu usuario" >
+    insira seu email:
+    <input type="text" placeholder="insira seu email">
+    insira seu telefone:
+    <input type="text" placeholder="insira seu telefone">  
+    insira sua senha:
+    <br>
+    <input id="inp_senha" placeholder="insira sua senha">
+    <br>
+    <button onclick="feito()">cadastrar</button>
+</div>
+    
+    <div id="div_final" style="display: none;">
+<a href="Cliente.html">acessar</a>
+    </div>
+
+</center>
+    <div class="div_rodape"></div>
+</body>
+</html>
+<script>
+    // functio para acessar a pagina do cliente
+    function acessar(){
+        var usuario = inp_usuario.value
+        var senha = inp_senha.value
+        var validar_user = inp_usuario_loguin.value
+        var validar_passoword = inp_senha_loguin.value
+        if (validar_user == usuario &&  validar_passoword == senha){
+            div_login.style.display = 'none'
+            div_final.style.display = 'block'
+        }else{alert(`Você não possui uma conta, se cadastre para utilizar nossos serviços`)
+        
+        }
+    }
+    // function para criar as creedencias
+    function cadastro(){
+        div_login.style.display = 'none'
+        div_cadastro.style.display = 'flex'
+
+    }
+    // function para voltar a tela de loguin
+    function feito(){
+        div_login.style.display = 'flex'
+        div_cadastro.style.display = 'none'
+    }
+
+
+</script>
