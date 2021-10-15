@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <style>
+        .div1 {
+            height: 100px;
+            background-color: rgb(255, 41, 41);
+            font-size: 65px;
+            color: white;
+            font-family: cursive;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+        }
+
+        .div2 {
+            height: 100px;
+            background-color: rgb(255, 41, 41);
+            margin-top: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 25px;
+            font-style: oblique;
+        }
+
+        .div3 {
+            display: flex;
+            height: 150px;
+            width: 1000px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"><span style="margin-left: 30px; text-shadow: 1px 1px 80px ; cursor: default;">iParking</span><span
+            onclick="produtos()"
+            style="margin-left: 100px; font-size: 20px; cursor: pointer; "><u>Produtos</u></span><span
+            onclick="quem_somos()" style="margin-left: 100px; font-size: 20px;cursor: pointer;"><u>Quem
+                somos?</u></span><span onclick="saiba_mais()"
+            style="margin-left: 100px; font-size: 20px; cursor: pointer;"><u>Saiba mais!</u></span>
+        <div onclick="cadastro()"
+            style="background-color: rgb(206, 34, 34); margin-left: 200px; font-size: 25px; border: 3px solid rgb(182, 9, 9); font-style: oblique; font-weight: bold;cursor: pointer;">
+            <a href="SiteCADASTRO.html">Cadastro</a>/<a href="SiteLOGIN.html">Login</a></div>
+    </div>
+    <div class="div3"><img style="height: 450px; width: 380px;"
+            src="https://i2.wp.com/static.zuldigital.com.br/blog/2020/02/Estacionamento-Tiet--Plaza-Shopping_Foto-2_divulga--o_Easy-Resize.com-1.jpg?resize=840%2C630&ssl=1"><img
+            style="height: 450px; width: 600px;"
+            src="https://cotandoseguro.com/blog-seguro-auto/wp-content/uploads/2019/05/como-estacionar-carro-768x455.jpg"><img
+            style="height: 450px; width: 370px;"
+            src="https://mobilidade.estadao.com.br/wp-content/uploads/2020/07/Marcelo-nunes-nova.jpg"></div>
+    <div class="div2">Os Melhores para o gerenciamento de seu estacionamento!</div>
+
+</body>
+
+</html>
+<script>
+    function cadastro() {
+        alert('Seja bem vindo ao nosso site! Fez bem em nos escolher.')
+    }
+    function produtos() {
+        alert(`Olá, aqui está uma lista de nossos produtos...                                                                                                                   Sensor infra-vermelho para vagas                                                          Sensor de proximidade`)
+    }
+    function quem_somos() {
+        alert('Nós somos a iParking. Uma empresa focada no gerenciamento de veiculos, podento te favorecer da melhor maneira possivel com nossa maxima eficiencia!')
+    }
+    function saiba_mais() {
+        alert('Empresa fundada em 2021 originalmente por antigos patrões, e hoje dirigida pela melhor equipe. Viemos para facilitar um trabalho que requer muito trabalho, que é o gerenciamento de veiculos. Com nossa inovação, oferecemos os melhores sensores e mão de obra que realizarão todo seu trabalho que antes era manual e massante. Vem pro nosso lado!')
+    }
+</script>
