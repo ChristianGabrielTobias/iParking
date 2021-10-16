@@ -69,6 +69,29 @@ insert into estacionamento (nome,rua,numero,bairro,cep,qtdVagas) values
 
 select * from estacionamento;
 
+-- Christian criando  tabela sensor(parte de outro aluno...)
+ create table sensor (
+     idSensor int primary key auto_increment,
+     statusSensor char (1),
+     vagaSensor varchar (10),
+     FkEstacionamento int
+ );
+
+
+ insert into sensor (statusSensor, vagaSensor) values
+ ('1', '1'),
+ ('1', '2'),
+ ('0', '3'),
+ ('1', '4'),
+ ('0', '5'),
+ ('1', '6'),
+ ('1', '7'),
+ ('0', '8'),
+ ('1', '9'),
+ ('0', '10');
+ 
+
+
 -- Alan (Criação tabela Leitura)
 create table Leitura(
 idLeitura int primary key auto_increment,
