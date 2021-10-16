@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body{
+    background-color: blanchedalmond;
+}
+
 .header{
     height: 150px;
     background-color: #8b0000;
@@ -69,89 +73,91 @@
     padding: 5px;
 }
 
-/**/
-
-.banner {
-    height: 700px;
-    background-image: url('img/estacionamento.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#sel_perfil{
+    background: black;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-#divisao{
-    height: 10px;
-    background-color: black;
-}
-
-.proposito {
-    height: 450px;
-    background-color: #E5E5E5;
-}
-
-.proposito .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.proposito .container h2 {
+.op_perfil{
     background-color: white;
-    padding: 25px;
-    border-radius: 25px;
-    color: #E6005A;
+    color: black;
 }
 
-.proposito .container .mvv div img {
-    height: 100px;
-    
-} 
-
-.proposito .container .mvv {
-    margin-top: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+#div_conteudo3{
+    height: 70vh;
+    background-image: url(https://prod-zettle-eu-west-1-zettle-blog-uploads.s3.eu-west-1.amazonaws.com/uploads/2018/09/Depositphotos_78929640_l-2015-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
 }
 
-.proposito .container .mvv div {
-    width: 20vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.calculadora{
+    width: 80%;
+    height: 100%;
+    margin: auto;
     align-items: center;
-    text-align: center;
 }
 
-.proposito .container .mvv div h3 {
-   color: #E6005A; 
-   font-weight: bolder;
-   margin: 25px 0;
+.calculadora input{
+    text-align: center; 
+    border-radius: 10px;
+    padding: 5px;
+}  
+
+.calculadora button{
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    width: 150px;
+    height: 40px;
+    cursor:pointer;
+    border: none;
 }
+
+.calculadora button:hover{
+    background-color: white;
+    color: #8b0000;
+    border: black 3px solid;
+}
+
+.principal{
+    display: block;
+    margin-top: 50px;
+    margin-left: 35%;
+    background-color: #8b0000;
+    width: 270px;
+    border: black 3px solid;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.sumir{
+    display: none;
+    margin-top: 50px;
+    margin-left: 35%;
+    background-color: #8b0000;
+    width: 270px;
+    border: black 3px solid;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
 
 .footer {
+    color: white;
     background-color: #8b0000;
-    height: 100px;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.footer p {
-    color: white;
-}
-
-.message {
-    margin-right: 250px;
-    width: 10%;
-    color: white;
-    font-size: 40px;
-}
-
-.message span {
-    font-weight: bolder;
 }

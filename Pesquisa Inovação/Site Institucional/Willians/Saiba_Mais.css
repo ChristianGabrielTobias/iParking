@@ -1,0 +1,190 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 150px;
+    background-color: #8b0000;
+    border: rgb(20, 20, 20) 3px solid;
+}
+
+.container{
+    width: 80%;
+    height: 100%;
+    margin: auto;  
+}
+
+.header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.header .container h1 a{
+    color: whitesmoke;
+    font-size: 60px;
+    text-decoration: none;
+}
+
+.navbar{  
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navbar li{
+    margin-right: 50px;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover{
+   color: black;
+}
+
+.navbar .active a:hover{
+    border: black 3px solid;
+    border-radius: 20px;
+    background-color: white;
+    color: #8b0000;
+    padding: 5px;
+}
+
+.navbar .active a{
+    color: white;
+    border: black 3px solid;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.Fundo2{
+    height: 500px;
+    width: 100%;
+    background-image: url(file:///D:/An%C3%A1lise%20e%20Desenvolvimento%20de%20Sistemas/Sprint2/iParking/Algoritmo/Site%20intitucional/Site%20Alan/Alan/imagens/Fundo02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteudo4{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.conteudo4 b{
+    color: white;
+    font-size: 30px;
+}
+.conteudo4 span{
+    color: white;
+    font-size: 20px;
+    text-shadow: black 1px 1px 1px;
+}
+
+.conteudo4 span b{
+    font-size: 21px;
+}
+
+.Fundo3{
+    height: 450px;
+    width: 95%;
+    border: 0px solid;
+}
+
+.conteudo5{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.conteudo5 h1{
+    color: #FF2121;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.conteudo5 span{
+    font-size: 20px;
+}
+
+.Fundo4{
+    height: 400px;
+    width: 100%;
+    background-image: url(file:///D:/An%C3%A1lise%20e%20Desenvolvimento%20de%20Sistemas/Sprint2/iParking/Algoritmo/Site%20intitucional/Site%20Alan/Alan/imagens/Fundo03.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteudo6{
+    width: 80%;
+    
+    margin: auto;
+    margin-bottom: 20px;
+}
+.conteudo6 h1{
+    color: #FF2121;
+    font-size: 30px;
+}
+
+.conteudo6 h2{
+    font-size: 20px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.conteudo6 span{
+    font-size: 20px;
+}
+
+.divisoria{
+    background-color: #FF2121;
+    width: 100%;
+    height: 5px;
+}
+
+.conteudo2{
+    height: 350px;
+    border: 0px solid;
+    background-color: black;
+}
+
+.contato{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    flex-direction: row;
+}
+
+.span_contato{
+    color:white;
+    font-size: 50px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.footer {
+    background-color: #8b0000;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid 3px;
+}
+
+.footer p {
+    color: white;
+}

@@ -12,7 +12,7 @@
 <div id="div_inicio">
   <div id="div_login">
    <h1 id="titulo">
-     <a href="Site-Institucional.html"> 
+     <a href="Index.html"> 
        iParking 
      </a>
     </h1>
@@ -33,7 +33,7 @@
         Manter-me conectado
       </div><br><br>
       
-      <button id="but_acessar"> 
+      <button id="but_acessar" onclick="but_entrar()"> 
         Acessar 
       </button>
 
@@ -52,3 +52,9 @@
 
 </body>
 </html>
+
+<script>
+  function but_entrar(){
+    window.location.href = "acesso.html";
+  }
+</script>
