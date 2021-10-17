@@ -4,8 +4,12 @@
     padding: 0;
 }
 
+body{
+    background-color: #E5E5E5;
+}
+
 .header{
-    height: 150px;
+    height: 20vh;
     background-color: #8b0000;
     border: rgb(20, 20, 20) 3px solid;
 }
@@ -14,13 +18,10 @@
     width: 80%;
     height: 100%;
     margin: auto;  
-}
-
-.header .container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;   
 }
 
 .header .container h1 a{
@@ -70,7 +71,7 @@
 }
 
 .banner {
-    height: 600px;
+    height: 70vh;
     width: 100%;
     background-image: url('file:///D:/An%C3%A1lise%20e%20Desenvolvimento%20de%20Sistemas/Sprint2/iParking/Algoritmo/Site%20intitucional/Site%20Alan/Alan/imagens/Fundo01.png');
     background-repeat: no-repeat;
@@ -82,12 +83,12 @@
 }
 
 .divisao{
-    height: 10px;
+    height: 5px;
     background-color: black;
 }
 
 .conteudo{
-    height: 350px;
+    height: 55vh;
     border: 0px solid;
 }
 
@@ -101,6 +102,10 @@
     color: #FF2121;
     margin-top: 90px;
     font-size: 60px;
+    background-color: white;
+    width: 310px;
+    border-radius: 25px;
+    padding: 5px;
 }
 .about span{
     font-size: 20px;
@@ -124,7 +129,7 @@
 }
 
 .proposito {
-    height: 450px;
+    height: 68vh;
     background-color: #E5E5E5;
 }
 
@@ -139,7 +144,7 @@
     background-color: white;
     padding: 25px;
     border-radius: 25px;
-    color: #E6005A;
+    color: #FF2121;
 }
 
 .proposito .container .mvv div img {
@@ -168,23 +173,13 @@
    margin: 25px 0;
 }
 
-.footer {
-    color: white;
-    background-color: #8b0000;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #divisao3{
-    height: 10px;
+    height: 5px;
     background-color: #8b0000;
 }
 
 .conteudo2{
-    height: 350px;
-    border: 0px solid;
+    height: 48vh;
     background-color: black;
 }
 
@@ -192,32 +187,13 @@
     width: 80%;
     height: 100%;
     margin: auto;
-    flex-direction: row;
 }
 
-.span_contato{
-    color:white;
-    font-size: 50px;
-    font-weight: bold;
+.footer {
+    color: white;
+    background-color: #8b0000;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-
-
-
-
-
-.footer p {
-    color: white;
-}
-
-.message {
-    margin-right: 250px;
-    width: 10%;
-    color: white;
-    font-size: 40px;
-}
-
-.message span {
-    font-weight: bolder;
 }
