@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> iParking </title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div id="div_inicio">
+  <div id="div_login">
+   <h1 id="titulo">
+     <a href="Index.html"> 
+       iParking 
+     </a>
+    </h1>
+    <div id="div_dados">
+      <h2>
+        <u>
+         Login
+        </u>
+      </h2>
+      <span class="alterar">E-mail:</span>
+      <input id="usuario" type="email" placeholder="iParking@bandtec.com.br"><br><br>
+
+      <span class="alterar">Senha:</span>
+      <input id="senha" type="password" placeholder="***********"><br><br>
+       
+      <div id="div_linha">
+       <input type="checkbox">
+        Manter-me conectado
+      </div><br><br>
+      
+      <button id="but_acessar" onclick="but_entrar()"> 
+        Acessar 
+      </button>
+
+      <div id="div_cadastro">
+        <u>
+          Ainda não tem uma conta?
+        </u>
+        <br>
+        <a id="but_cadastrar" href="Cadastro.html">
+          Cadastre-se
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+<script>
+  function but_entrar(){
+    if(usuario.value == 'usuario@iparking.com' && senha.value == '123456'){
+    window.location.href = "acesso.html";
+    }else{
+      alert("Email ou senha incorretos")
+    }
+  }
+</script>
