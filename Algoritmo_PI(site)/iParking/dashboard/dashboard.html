@@ -113,6 +113,8 @@
                 chart.data.datasets[0].data.push(parseFloat(data));
                 if(data == 1){
 					chart.data.datasets[0].backgroundColor = "#8b0000";
+				}else if(data == -1){
+					chart.data.datasets[0].backgroundColor = "#8b0000";
 				}
 				chart.update();
 			});

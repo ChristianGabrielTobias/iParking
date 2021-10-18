@@ -16,7 +16,7 @@ function trc5000() {
   if (random >= 0.4) { /*mudei de 0.7 para 0.4 para dar 1 com mais frequencia*/
     return 1;
   } else if (random <= 0.4) {/*mudei de 0.7 para 0.4 para dar -1 com mais frequencia*/
-    return -1; /*troquei de 0 para -1 para mostrar no grafico que a vaga não esta sendo usada*/ 
+    return 0; /*troquei de 0 para -1 para mostrar no grafico que a vaga não esta sendo usada*/ 
   }
 }
 
