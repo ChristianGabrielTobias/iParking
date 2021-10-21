@@ -6,6 +6,8 @@ idFuncionário int primary key auto_increment,
 NomeFuncionário varchar(45),
 Cargo varchar(45),
 CPF char(11),
+Login varchar (15),
+senha varchar(15),
 TelefoneFixo char(10),
 celular char(11)) auto_increment = 1;
 
@@ -37,8 +39,7 @@ create table empresa(
     email varchar(45),
     cnpj char(14),
     telefone char(10),
-    data_criaçao date,
-    senha varchar(20)
+    data_criaçao date
 );
 
 insert into empresa (nomeEmpresa, email, cnpj, telefone, data_criaçao, senha) values
@@ -97,8 +98,7 @@ create table Leitura(
 idLeitura int primary key auto_increment,
 fkSensor int,
 horarioEntrada datetime,
-horarioSaida datetime,
-placa varchar(45)
+horarioSaida datetime
 )auto_increment = 1;
 
 insert into Leitura (horarioEntrada,horarioSaida,placa) values
