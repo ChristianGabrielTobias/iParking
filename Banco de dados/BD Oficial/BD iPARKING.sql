@@ -1,6 +1,6 @@
 -- Augusto ( criação da tabela funcionário )
-create database Sprint2;
-use sprint2;
+create database iPaking;
+use iPaking;
 create table Funcionário (
 idFuncionário int primary key auto_increment,
 NomeFuncionário varchar(45),
@@ -31,7 +31,7 @@ insert into Funcionário ( nomefuncionário, cargo, cpf, telefonefixo, celular )
 
 select * from funcionário;
 
--- Christian(criação da tabela empresa)
+-- Christian(criação da tabela empresa) -- 
 
 create table empresa(
     idEmpresa int primary key auto_increment,
@@ -50,7 +50,7 @@ insert into empresa (nomeEmpresa, email, cnpj, telefone, data_criaçao, senha) v
 
 select * from empresa;
 
--- Willians(Criação da tabela estacionamento)
+-- Willians(Criação da tabela estacionamento) -- 
 
 create table estacionamento(
  idEstacionamento int primary key auto_increment,
@@ -70,10 +70,10 @@ insert into estacionamento (nome,rua,numero,bairro,cep,qtdVagas) values
 
 select * from estacionamento;
 
--- Christian criando  tabela sensor(parte de outro aluno...)
+-- Christian criando  tabela sensor(parte de outro aluno...) --
  create table sensor (
      idSensor int primary key auto_increment,
-     statusSensor char (1),
+     statusSensor char (1) check(statusSensor = 1 or statusSensor = 0),
      vagaSensor varchar (10),
      FkEstacionamento int
  );
@@ -93,7 +93,8 @@ select * from estacionamento;
  
 
 
--- Alan (Criação tabela Leitura)
+-- Alan (Criação tabela Leitura) --
+
 create table Leitura(
 idLeitura int primary key auto_increment,
 fkSensor int,
@@ -113,7 +114,7 @@ insert into Leitura (horarioEntrada,horarioSaida,placa) values
 ('2021-09-11 18:47:22','2021-09-11 19:45:34','sur1o10');
 
 
--- Victor Veniti referenciando as tabelas e dando join nas tabelas
+-- Victor Veniti referenciando as tabelas e dando join nas tabelas --
 select*from estacionamento;
 select*from empresa;
 
