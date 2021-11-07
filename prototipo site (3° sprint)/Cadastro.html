@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="PT">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,74 +8,95 @@
     <title>Cadastra-se</title>
     <link rel="stylesheet" href="cadastro.css">
 </head>
+
 <body bgcolor="black">
     <div class="head">
         <div class="navbar"></div>
     </div>
     <div class="div_nome">
-        Crie sua conta para utilizar nossos serviços
+        Crie sua conta para 
+        utilizar nossos serviços
     </div>
     <div class="div_formulario">
-        Importate: No ato do cadastro informe apenas dados reais, pois serão a forma de contato e validação inicial.
+        -Importate: No ato do cadastro informe apenas dados reais, pois serão a forma de contato e validação inicial.
         <br> <br>
-        <label class="lb_nome" for="inp_nome">nome:</label>
-        <input id="inp_nome" type="text" placeholder="Ex: augusto henrique">
-        <br>
-        <label class="lb_email" for="inp_email">Email:</label>
-        <input id="inp_email" type="email" placeholder="Ex: augusto.henrique@provedor.com.br">
-        <br>
-        <label class="lb_email_con" for="inp_confirmacao">Confirme seu Email:</label>
-        <input id="inp_confirmacao" type="email" placeholder="Ex: augusto.henrique@provedor.com.br">
-        <br>  
-        <label for="inp_senha">Informe sua senha:</label>
-        <input id="inp_senha" type="password" placeholder="**********">
-        <br><br>
-        <button onclick="cadastro()">Criar conta</button>
-        <br> 
-        Já tem uma conta? <a style="font-size: 16px;" href="">acesse agora.</a>
+        <div class="div_formulario_Esquerda">
+            Nome: <br>
+            <input id="inp_nome" type="text" placeholder="Ex: augusto henrique"> <br> <br>
+            Cnpj: <br>
+            <input id="inp_cnpj" type="text" placeholder="Ex: 32.164.163/1032-13"> <br> <br>
+            Senha: <br>
+            <input id="inp_senha" type="password" placeholder="**********"> <br> 
+        </div>
+        <!--separação das div's-->
+        <div class="div_formulario_direita">
+            Email: <br>
+            <input id="inp_email" type="email" placeholder="Ex: augusto.henrique@provedor.com.br"> <br> <br>
+            Telefone: <br>
+            <input id="inp_tel" type="text" placeholder="Ex: 8765-4321"> <br><br>
+            Confirme a senha: <br>
+            <input id="inp_senha_confirmacao" type="password" placeholder="**********"> <br>
+
+        </div>
+        <div class="div_button">
+            <button onclick="cadastro()">Criar conta</button>
+        </div>
+        <div class="div_formulario_inferior">
+
+            <div>
+                Já tem uma conta? <a style="font-size: 16px;" href="">acesse agora</a>
+            </div>
+        </div>
     </div>
-<div class="div_login" style="display: none;">
+    <div class="div_login" style="display: none;">
 
-    <label class="lb_nome" for="inp_user">usuario:</label>
-    <input id="inp_nome" type="text" placeholder="Ex: augusto.henrique@provedor.com.br">
-    <br>
-    <label for="inp_senha">Informe sua senha:</label>
-    <input id="inp_senha_login" type="password" placeholder="**********">
-    <br><br>
-    <button>Fazer login</button>
+        <label for="inp_user_login">usuario:</label>
+        <input id="inp_user_login" type="text" placeholder="Ex: augusto.henrique@provedor.com.br">
+        <br>
+        <label for="inp_senha_login">Informe sua senha:</label>
+        <input id="inp_senha_login" type="password" placeholder="**********">
+        <br><br>
+        <button>Fazer login</button>
 
 
-</div>
-    
+    </div>
+
 </body>
+
 </html>
 <script>
 
-    
-    function cadastro(){
+
+    function cadastro() {
         // var's dos input's
+        var nome = inp_nome.value
         var user = inp_email.value
-        var email_validacao = inp_confirmacao.value
-        var senha = inp_senha.value
-        var Nome = inp_nome.value
+        var CNPJ = inp_cnpj.value
+        var tel = inp_tel.value
+        var senha_cadastro = inp_senha.value
+        var senha_confirmacao = inp_senha_confirmacao.value
 
         // if´s das validações 
-            if (senha == ``){
-                alert(`preencha o campo de senha`)
-            }if (user == ``){
-                alert(`preencha o campo de Email`)
-            }if (Nome == ``){
-                alert(`preencha o campo de nome`)
-            }if (inp_email_con != inp_email){
-                alert(`Os emails informados não são iguais`)
-            }else {
-               // aqui vai o link do login
-            }
+        if (nome == ``){
+            alert(`preencha o campo de nome`)
+        } if (user == ``) {
+            alert(`preencha o campo de Email`)
+        } if (CNPJ  == ``) {
+            alert(`preencha o campo de CNPJ`)
+        }if (tel == ``){
+            alert(`preencha o campo de telefone`)
+        }if (senha_cadastro == ``){
+            alert(`preencha o campo de senha`)
+        }if (senha_cadastro != senha_confirmacao) {
+            alert(`as senhas informadass não são iguais`)
+        } else {
+            // aqui vai o link do login
+        }
 
-        
-        
+
+
     }
-    
-    
+
+
 
 </script>

@@ -4,22 +4,50 @@
     font-family: 'Times New Roman', Times, serif;
 }
 .head {
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgb(72, 21, 255) 25%, rgb(34, 0, 155)65%, 
+    rgb(0,0,0)120%);
     width: 100%;
     height: 65px;
+    border-radius: 1px;
 }
 .div_formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    float: left;
     left: 400px;
     position: absolute;
-    width: 540px;
-    height: 435px;
-    background-color: rgba(255, 255, 255, 0.808);
+    width:  530px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    font-size: 18px;
-    margin-top: 45px;
+    font-size: 19px;
+    margin-top: 25px;
+    
+}
+.div_formulario_Esquerda {
+    float: left;
+    margin-left: 20px;
+}
+.div_formulario_direita {
+    float: left;
+    margin-left: 50px;
+}
+.div_button {
+    align-items: center;
+    margin-top: 225px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.div_formulario_inferior{
+    height: 52px;
+    padding: 0px;   
+    margin-top: 36px;
+    background-color: rgb(34, 0, 155);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 .div_login {
         display: flex;
@@ -52,7 +80,8 @@ input {
     border-bottom: 2px solid rgb(34, 0, 155);
     background-color: none;
     background: transparent;
-    width: 300px;
+    width: 220px;
+    height: 20px;
 }
 
 input:focus {
@@ -67,19 +96,16 @@ button {
     height: 30px;
     
 }
-
-label {
-    padding-right: 160px;
+button:hover {
+    background-color: rgb(21, 7, 70);
 }
 
-
-.lb_nome {
-    padding-right: 256px;
+a   {
+ color: rgb(255, 255, 255);
+ font-size: 15px;
 }
-
-.lb_email {
-    padding-right: 250px;
-}
-.lb_email_con {
-    padding-right: 152px;
+a:hover{
+    
+    color: rgb(12, 51, 158);
+    
 }
