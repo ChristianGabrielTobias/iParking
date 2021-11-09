@@ -34,6 +34,7 @@ body{
     flex-direction: row;
     list-style: none;
     justify-content: space-between;
+    color: white;
 }
 
 .navbar li{

@@ -11,15 +11,28 @@
 
 <body bgcolor="black">
     <div class="head">
-        <div class="navbar"></div>
+        <div class="container">
+            <h1>iParking</h1>
+            <ul class="navbar">
+                <!--COLOCAR LINK NESTE E A FONTE USADA-->
+               <li>Inicío</li>
+               <li><a href="Saiba_Mais.html">Saiba Mais</a></li>
+               <li>|</li>
+               <li><a href="Quem_somos.html">Quem Somos</a></li>
+               <li><a href="Login.html">Meu Acesso</a></li> 
+               <!--FALTA COLOCAR UM LINK NESTE CADASTRE-SE E COLOCAR NOS OUTROS HMTL-->
+               <li class="active"><a>Cadastra-se</a></li> 
+            </ul>
+        </div>
     </div>
     <div class="div_nome">
         Crie sua conta para 
-        utilizar nossos serviços
+        utilizar nossos serviços.
     </div>
     <div class="div_formulario">
-        -Importate: No ato do cadastro informe apenas dados reais, pois serão a forma de contato e validação inicial.
+        <h4>Importate: No ato do cadastro informe apenas dados reais, pois serão a forma de contato e validação inicial.</h4>
         <br> <br>
+        <!--o formulario foi separada em duas div's para que os elementos ficassem lado a lado-->
         <div class="div_formulario_Esquerda">
             Nome: <br>
             <input id="inp_nome" type="text" placeholder="Ex: augusto henrique"> <br> <br>
@@ -44,6 +57,7 @@
         <div class="div_formulario_inferior">
 
             <div>
+                <!--colocar o HREF nesta ancora-->
                 Já tem uma conta? <a style="font-size: 16px;" href="">acesse agora</a>
             </div>
         </div>
