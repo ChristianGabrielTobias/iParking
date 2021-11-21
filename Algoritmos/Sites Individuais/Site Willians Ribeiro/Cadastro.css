@@ -1,0 +1,110 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url(img/cadastro.webp);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.div_cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .container_dois{
+    align-items: center;
+    justify-content: center; 
+    height: 250px;
+    padding-left: 25px;
+}
+
+.container{
+    background-color: #8b0000;
+    height: 830px;
+    width: 800px;
+    margin: 40px;
+    border: black solid 8px; 
+}
+
+a{
+    text-decoration: none;
+}
+
+#sobre{
+    padding:10px;
+    padding-top: 30px;
+}
+
+.container .titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    color: white;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+.titulo:hover{
+    color: black;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+}
+
+.container_dois{
+    display: flex;
+}
+
+.tamanho{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 19px
+}
+
+.div_dados{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    float: left;
+    margin-top: 110px;
+    margin-right: 100px;
+}
+
+.div_info{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    float: left;
+    margin-top: 128px;
+}
+
+input{
+    border-radius: 8px;
+    height: 20px;
+    border: black 2px solid;
+}
+
+.container .cadastrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    border: 2px black solid;
+    background-color: gray;
+    border-radius: 8px;
+    margin-left: 350px;
+    margin-right: 350px;
+    color: white;
+    height: 22px;
+    width: 110px;
+}
+
+.container .cadastrar:hover{
+    color: black;
+}
