@@ -72,10 +72,12 @@ select * from estacionamento;
 
 -- Christian criando  tabela sensor(parte de outro aluno...) --
  create table sensor (
-     idSensor int primary key auto_increment,
+     idSensor int auto_increment,
      statusSensor char (1) check(statusSensor = 1 or statusSensor = 0),
      vagaSensor varchar (10),
-     FkEstacionamento int
+     FkEstacionamento int,
+     foreign key (FkEstacionamento) references estacionamento (idEstacionamento),
+     primary key (idSensor, FkSstacionamento)
  );
 
 
@@ -96,8 +98,10 @@ select * from estacionamento;
 -- Alan (Criação tabela Leitura) --
 
 create table Leitura(
-idLeitura int primary key auto_increment,
+idLeitura int auto_increment,
 fkSensor int,
+foreign key (fkSensor) references sensor (idSensor),
+primary key (idLeitura, fkSensor),
 horarioEntrada datetime,
 horarioSaida datetime
 )auto_increment = 1;
@@ -112,6 +116,30 @@ insert into Leitura (horarioEntrada,horarioSaida,placa) values
 ('2021-09-07 03:23:00','2021-09-07 05:54:08','you-7031'),
 ('2021-09-08 00:00:35','2021-09-09 13:46:38','ban3d73'),
 ('2021-09-11 18:47:22','2021-09-11 19:45:34','sur1o10');
+
+-- Criação das tabelas de login e cadastro -- Augusto
+
+create table cadastro (
+idCadastro int primary key auto_increment,
+NomeEmpresa varchar(45),
+Cnpj char (14),
+senha varchar(20),
+email varchar(60),
+telefone char (11),
+confirmacaoSenha varchar (20)
+);
+
+create table login (
+idLogin int auto_increment,
+Cnpj char(14),
+email varchar(60),
+senha varchar(20),
+fkCadastro int,
+foreign key (fkCadastro) references Cadastro(idCadastro),
+fkEmpresa int,
+foreign key (fkEmpresa) references Empresa(idEmpresa),
+primary key (idLogin, fkCadastro, fkEmpresa)
+);
 
 
 -- Victor Veniti referenciando as tabelas e dando join nas tabelas --
