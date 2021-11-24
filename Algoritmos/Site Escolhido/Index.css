@@ -90,8 +90,7 @@ body{
 }
 
 .conteudo{
-    height: 45vh;
-    border: 0px solid;
+    height: 55vh;
 }
 
 .about{
@@ -137,7 +136,7 @@ body{
 }
 
 .proposito {
-    height: 60vh;
+    height: 70vh;
     background-color: #E5E5E5;
 }
 
@@ -187,7 +186,7 @@ body{
 }
 
 .conteudo2{
-    height: 40vh;
+    height: 60vh;
     background-color: black;
     display: flex;
 }

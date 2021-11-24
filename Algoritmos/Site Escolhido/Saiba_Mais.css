@@ -106,7 +106,7 @@ body{
 }
 
 .Fundo3{
-    height: 45vh;
+    height: 65vh;
     width: 100%;
 }
 
@@ -173,7 +173,7 @@ body{
 }
 
 .conteudo2{
-    height: 40vh;
+    height: 60vh;
     background-color: black;
     display: flex;
 }
