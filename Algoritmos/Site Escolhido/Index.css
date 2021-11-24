@@ -9,7 +9,7 @@ body{
 }
 
 .header{
-    height: 20vh;
+    height: 18vh;
     background-color: #8b0000;
 }
 
@@ -54,6 +54,7 @@ body{
 
 .navbar .active{
     font-weight: bolder;
+    cursor: pointer;
 }
 
 .navbar .active a:hover{
@@ -76,13 +77,11 @@ body{
 .banner {
     height: 70vh;
     width: 100%;
-    background-image: url('file:///D:/An%C3%A1lise%20e%20Desenvolvimento%20de%20Sistemas/Sprint2/iParking/Algoritmo/Site%20intitucional/Site%20Alan/Alan/imagens/Fundo01.png');
+    background-image: url('img/estacionamento.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .divisao{
@@ -91,7 +90,7 @@ body{
 }
 
 .conteudo{
-    height: 55vh;
+    height: 45vh;
     border: 0px solid;
 }
 
@@ -99,8 +98,8 @@ body{
     width: 80%;
     height: 100%;
     margin: auto;
-    align-items: center;
 }
+
 .about h1{
     color: #FF2121;
     margin-top: 90px;
@@ -114,7 +113,7 @@ body{
     font-size: 20px;
 }
 
-.Btn_saibamais{
+.but_saiba_mais{
     border: 0px;
     background-color: black;
     color: white;
@@ -124,15 +123,21 @@ body{
     height: 55px;
     margin-left: 80%;
     cursor:pointer;
+    border-radius: 5px;
+    box-shadow: rgb(24, 24, 24) 5px -9px 3px;
 }
 
-.Btn_saibamais a{
+.but_saiba_mais a{
     color:white;
     text-decoration: none;
 }
 
+.but_saiba_mais a:hover{
+    color: rgb(245, 107, 107);
+}
+
 .proposito {
-    height: 68vh;
+    height: 60vh;
     background-color: #E5E5E5;
 }
 
@@ -182,20 +187,72 @@ body{
 }
 
 .conteudo2{
-    height: 48vh;
+    height: 40vh;
     background-color: black;
+    display: flex;
 }
 
 .contato{
     width: 80%;
     height: 100%;
     margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex; 
+}
+
+.fale_conosco{
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.ipt_nome{
+    width: 450px;
+    height: 24px;
+}
+
+.ipt_email{
+    width: 450px;
+    height: 24px;
+    
+}
+
+.ipt_telefone{
+    width: 450px;
+    height: 24px;
+}
+
+.ipt_assunto{
+    width: 450px;
+    height: 24px;
+}
+
+.area_desc{
+    width: 450px;
+}
+
+.but_enviar {
+    height: 25px;
+    width: 450px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    border: black 1px solid;
+}
+
+.but_enviar:hover{
+    background-color: #fa0707;
 }
 
 .footer {
     color: white;
     background-color: #8b0000;
-    height: 12vh;
+    height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;

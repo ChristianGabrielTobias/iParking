@@ -22,9 +22,7 @@
         </div>
     </div>
 
-    <div class="banner">
-        <img style="height: 100%; width: 100%;" src="img/Fundo01.png" alt="">
-    </div>
+    <div class="banner"></div>
 
     <div class="divisao"></div>
  
@@ -37,7 +35,11 @@
                 operacional ao gerencial, para todos os tamanhos de negócios. <br><br>
                 Temos em nosso DNA o prazer em atender bem suas necessidades de mobilidade urbana.
             </span> <br><br><br>
-            <button class="Btn_saibamais"><a href="Saiba_Mais.html">SAIBA MAIS</a></button>
+            <button class="but_saiba_mais">
+                <a href="Saiba_Mais.html">
+                    SAIBA MAIS
+                </a>
+            </button>
         </div>
     </div>
   
@@ -79,17 +81,19 @@
 
     <div class="conteudo2">
         <div class="contato">
-            <center>
-            <span style="color: white; font-weight: bold; font-size: 30px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;text-align: center; "> FALE CONOSCO
+            <span class="fale_conosco"> 
+                FALE CONOSCO
             </span><br><br>
-            <input style="width: 35%; height: 25px;" type="text" placeholder="NOME"><br>
-            <input style="width: 19.1%; height: 25px;" type="text" placeholder="EMAIL">
-            <input style="width: 15%; height: 25px; " type="tel" placeholder="TELEFONE"><br>
-            <input style="width: 35%; height: 25px;" type="text" placeholder="ASSUNTO"><br>
-            <textarea style="width: 35.2%; border: none; height: 115px;" name="text" rows="14" cols="10" wrap="soft" > </textarea><br>
-            <button onclick="enviar()" style="width: 35.5%; height: 30px; background-color: red; color: white; border: none; cursor:pointer;">ENVIAR</button>
-        </center>
+            <input class="ipt_nome" type="text" placeholder="NOME">
+            <input class="ipt_email" type="text" placeholder="E-MAIL">
+            <input class="ipt_telefone" type="tel" placeholder="TELEFONE">
+            <input class="ipt_assunto" type="text" placeholder="DESCRIÇÃO">
+            <textarea class="area_desc" rows="8" cols="10" wrap="soft"></textarea>
+            <button class="but_enviar" onclick="enviar()">
+                ENVIAR
+            </button>
         </div>
+    </div>
 
     <div class="footer">
         <p> iParking © 2021</p>

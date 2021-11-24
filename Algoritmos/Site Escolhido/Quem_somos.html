@@ -25,25 +25,32 @@
     <div class="banner">
 
         <div style="float: left;">
-            <button id="but_um" onclick="but_anterior()">Anterior</button>
+            <button id="but_um" onclick="but_anterior()">
+                Anterior
+            </button>
         </div>
 
         <div class="container_dois" style="float: left;">
-            <img id="integrantes" src="img/Allan.jpg"><br>
+            <img id="integrantes" src="img/cristhian.jpg"><br>
             <p id="texto">
-                Meu nome é Alan, tenho 18 anos. <br> Atualmente trabalho no iParking e frequento a faculdade Bandtec. <br> 
-                Tenho foco na área de back-end, adoro jogos e musicas. Tenho um grande sonho de morar <br> e trabalhar no exterior.
+                Meu nome é Christian Gabriel, tenho 20 anos.<br> 
+                Acredito que a verdadeira motivação vem da realização,
+                desenvolvimento pessoal, satisfação no trabalho e reconhecimento
             </p>
         </div>
 
         <div style="float: left;">
-            <button id="but_dois" onclick="but_proximo()">Próximo</button>
+            <button id="but_dois" onclick="but_proximo()">
+                Próximo
+            </button>
         </div>
 
     </div>
 
     <div class="footer">
-     <p> iParking © 2021</p>
+        <p>
+         iParking © 2021
+        </p>
     </div>
     
 </body>
@@ -58,33 +65,26 @@
         ax_num ++;
         
     if(ax_num == '0'){
-        integrantes.src = `img/Allan.jpg`;
-        texto.innerHTML = `Meu nome é Alan, tenho 18 anos.<br> 
-         Atualmente trabalho no iParking e frequento a faculdade Bandtec.<br> 
-         Tenho foco na área de back-end, adoro jogos e musicas.Tenho um grande sonho de morar<br>
-         e trabalhar no exterior.`;
-    } 
-    else if(ax_num == '1'){
         integrantes.src = `img/cristhian.jpg`;
         texto.innerHTML = `Meu nome é Christian Gabriel, tenho 20 anos.<br> 
         Acredito que a verdadeira motivação vem de realização,
         desenvolvimento pessoal, satisfação no trabalho e reconhecimento`;
-        but_um.style.display = 'block';
     }
-    else if(ax_num == '2'){
+    else if(ax_num == '1'){
         integrantes.src = `img/Veniti.jpg`;
         texto.innerHTML = `Victor Veniti de Sousa Melo,Tenho 22 anos.<br>
         Atualmente faço faculdade de ADS com a ideia de um dia me tornar referência na área em que estiver atuando,<br> 
         espero  conseguir crescer na iParking juntamente a minha equipe.`;
+        but_um.style.display = 'block';
     }
-    else if(ax_num == '3'){
+    else if(ax_num == '2'){
         integrantes.src = `img/Augusto.jpg`;
         texto.innerHTML = `Meu nome é Augusto, tenho 19 anos.<br>
         Meu primeiro contato com tecnologia foi pela faculdade Bandtec.<br>
         Estou em constante aprendizado e a área que me chamou mais atenção foi o Front-end.<br>
         Minha motivação é me formar para investir em sonhos maiores`;
     }
-    else if(ax_num == '4'){
+    else if(ax_num == '3'){
         integrantes.src = `img/Guilherme.jpg`;
         texto.innerHTML = `Meu nome é Guilherme Silva de Goes,atualmente estou com 18 anos.<br> 
         Trabalho bem em equipe, estou no caminho de me tornar um bom programador,<br> 
@@ -92,14 +92,14 @@
         Considero um bom ponto, meu trabalho em equipe, tento sempre ouvir a todos e fazer uma<br> 
         boa comunicação, clara e objetiva para que a equipe consiga trabalhar bem`;
     }
-    else if(ax_num == '5'){
+    else if(ax_num == '4'){
         integrantes.src = `img/Willians.jpg`;
         texto.innerHTML = `Meu nome é Willians Ribeiro. Tenho 20 anos.<br> 
         Sou um jovem em constante evolução, sempre aprendendo com meus erros e crescendo.<br> 
         Meu atual objetivo é colaborar mais nesse ambiente de trabalho<br> 
         onde posso por em prática os meu conhecimentos em favor à iParking`;
     }
-    else if(ax_num >= '6'){
+    else if(ax_num >= '5'){
         integrantes.src = ``;
         texto.innerHTML = `<b><u>Equipe iParking</u></b>`;
         but_dois.style.display = 'none';
@@ -109,11 +109,11 @@
     function but_anterior(){
         ax_num --;
         
-        if(ax_num == '6'){
+        if(ax_num == '5'){
         integrantes.src = ``;
         texto.innerHTML = `<b><u>Equipe iParking<br>Obrigado!!!</u></b>`;  
         }
-        else if(ax_num == '5'){
+        else if(ax_num == '4'){
         integrantes.src = `img/Willians.jpg`;
         texto.innerHTML = `Meu nome é Willians Ribeiro. Tenho 20 anos.<br> 
         Sou um jovem em constante evolução, sempre aprendendo com meus erros e crescendo.<br> 
@@ -121,7 +121,7 @@
         onde posso por em prática os meu conhecimentos em favor a iParking`;
         but_dois.style.display = 'block';
         }
-        else if(ax_num == '4'){
+        else if(ax_num == '3'){
         integrantes.src = `img/Guilherme.jpg`;
         texto.innerHTML = `Meu nome é Guilherme Silva de Goes,atualmente estou com 18 anos.<br> 
         Trabalho bem em equipe, estou no caminho de me tornar um bom programador,<br> 
@@ -129,34 +129,26 @@
         Considero um bom ponto, meu trabalho em equipe, tento sempre ouvir a todos e fazer uma<br> 
         boa comunicação, clara e objetiva para que a equipe consiga trabalhar bem`;
         }
-        else if(ax_num == '3'){
+        else if(ax_num == '2'){
         integrantes.src = `img/Augusto.jpg`;
         texto.innerHTML = `Meu nome é Augusto, tenho 19 anos.<br>
         Meu primeiro contato com tecnologia foi pela faculdade Bandtec.<br>
         Estou em constante aprendizado e a área que me chamou mais atenção foi o Front-end.<br>
         Minha motivação é me formar para investir em sonhos maiores`;
         }
-        else if(ax_num == '2'){
+        else if(ax_num == '1'){
         integrantes.src = `img/Veniti.jpg`;
         texto.innerHTML = `Victor Veniti de Sousa Melo,Tenho 22 anos.<br>
         Atualmente faço faculdade de ADS com a ideia de um dia me tornar referencia na área em que estiver atuando,<br> 
         espero  conseguir crescer na iParking juntamente a minha equipe.`;
         }
-        else if(ax_num == '1'){
+        else if(ax_num == '0'){
         integrantes.src = `img/cristhian.jpg`;
         texto.innerHTML = `Meu nome é Christian Gabriel, tenho 20 anos.<br> 
         Acredito que a verdadeira motivação vem de realização,
         desenvolvimento pessoal, satisfação no trabalho e reconhecimento`;
+        but_um.style.display = 'none';
         }
-        else if(ax_num == '0'){
-        integrantes.src = `img/Allan.jpg`;
-        texto.innerHTML = `Meu nome é Alan, tenho 18 anos.<br> 
-         Atualmente trabalho no iParking e frequento a faculdade Bandtec.<br> 
-         Tenho foco na área de back-end, adoro jogos e musicas.Tenho um grande sonho de morar<br>
-         e trabalhar no exterior.`; 
-         but_um.style.display = 'none';
-        }
-        
     }
     
 </script>
