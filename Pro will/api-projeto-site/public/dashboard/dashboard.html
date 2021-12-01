@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Mexico | Perfil</title>
+
+    <link rel="stylesheet" href="../css/perfil.css">
+    <link rel="icon" href="./css/img/icon.png">
+
+    <!-- <link rel="stylesheet" href="dashboards.css"> -->
+    <script src="../assets/js/funcoes.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link 
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> -->
+    <script type="text/javascript" src="https://www.chartjs.org/dist/2.8.0/Chart.min.js"></script>
+</head>
+
+<body onload="getMetrica()">
+
+    <div class="div_container">
+        <div class="div_info">
+
+            <div class="mural"><a href="./mural.html">Mural de eventos</a></div>
+            <div>
+                <div class="div_img"><img src="../css/img/fotoPerfil.png" alt="">
+                </div>
+                <p id="nomeUser">
+
+                </p>
+            </div>
+            <div class="btn-logout" onclick="limparSessao()">
+                <h3>Sair</h3>
+            </div>
+
+        </div>
+        <div id='metrica'></div>
+    </div>
+</body>
+
+
+<script>
+    function getMetrica() {
+        //loading
+
+        fetch('/usuarios/veic/metrica', {
+            method: 'GET'
+        }).then((res) => {
+            //tira loading
+            res.json().then((marcas) => {
+                console.log(marcas)
+                marcas.forEach(marca => {
+                    metrica.insertAdjacentHTML('afterbegin', `<p>${marca.marca}: ${marca.contagem} ${marca.contagem > 1 ? 'carros' : 'carro'}</p>`)
+                });
+            })
+        }).catch((err) => {
+            //tira loading
+            console.log(err)
+        })
+
+        nomeUser.innerHTML = `Bem Vindo, ${sessionStorage.NOME_USUARIO}`
+
+    }
+
+    function getName() {
+        console.log('teste')
+        fetch('/usuarios/cadastrar/usuarioName', {
+            method: 'GET'
+        }).then((res) => {
+            res.json().then((usuario) => {
+                console.log(usuario)
+                for (var i = 0; i < usuario.length; i++) {
+                    console.log(usuario[i].nome);
+
+                }
+            })
+        })
+    }
+</script>
+</body>
+
+</html>
