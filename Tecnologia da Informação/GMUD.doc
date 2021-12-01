@@ -1,0 +1,644 @@
+Date: Tue, 30 Nov 2021 21:47:38 +0000 (UTC)
+Message-ID: <1066306200.7.1638308858390@df326c792498>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_6_37602456.1638308858390"
+
+------=_Part_6_37602456.1638308858390
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>GMUD</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>GMUD</h1>
+    <div class=3D"Section1">
+        <h3 id=3D"GMUD-Grupo-11ADS">Grupo-1 1ADS</h3>
+<h3 id=3D"GMUD-Integrantes:AugustoHenriqueRA:01212145CristhianGabrielRA:012=
+12113GuilhermeGoesRA:01212142VictorVenitiRA:01212037WilliansRibeiroRA:01212=
+039">Integrantes:<br>Augusto Henrique RA: 01212145<br>Cristhian Gabriel RA:=
+ 01212113<br>Guilherme Goes RA: 01212142<br>Victor Veniti RA: 01212037<br>W=
+illians Ribeiro RA: 01212039</h3>
+<p></p>
+<h3 id=3D"GMUD-1-Dadosdamudan=C3=A7a">1- Dados da mudan=C3=A7a</h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"340ff368-c0e3-4a7d-9610-fd2=
+bb0da235d" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 254.0px;">
+<col style=3D"width: 372.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>Quest=C3=A3o</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Descri=C3=A7=C3=A3o</strong></p></th>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTd"><p>Respons=C3=
+=A1vel pela abertura do chamado</p></td>
+<td class=3D"confluenceTd"><p>Willians (N1)</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTd"><p>Motivo</p><=
+/td>
+<td class=3D"confluenceTd"><p>Aplica=C3=A7=C3=A3o Web (dashboard) apresenta=
+ diversos erros, com diversos clientes.</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTd"><p>Data/Hora</=
+p></td>
+<td class=3D"confluenceTd"><p>26-11-2021 14:42</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTd"><p>Classifica=
+=C3=A7=C3=A3o (tipo)</p></td>
+<td class=3D"confluenceTd"><p>Emergencial </p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTd"><p>Riscos</p><=
+/td>
+<td class=3D"confluenceTd"><p>-Perca de dados; </p><p>-perca da qualidade d=
+e gerenciamento do estabelecimento;</p><p>-perca de clientes;</p><p>-instab=
+ilidade na aplica=C3=A7=C3=A3o afetando todo o ambiente</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p>2- Poss=C3=ADveis impactos que podem ser causados pela mudan=C3=A7a/em q=
+ual item de configura=C3=A7=C3=A3o</p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"5f82fc25-51ec-4db7-92eb-6a8=
+87b75cb0a" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 254.0px;">
+<col style=3D"width: 372.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour=3D"#deebff" class=3D"confluenceTh"><p><strong>Que=
+st=C3=A3o</strong></p></th>
+<th data-highlight-colour=3D"#deebff" class=3D"confluenceTh"><p><strong>Des=
+cri=C3=A7=C3=A3o</strong></p></th>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd"><p>Uma reestru=
+tura=C3=A7=C3=A3o do ambiente</p></td>
+<td class=3D"confluenceTd"><p>por tratarmos de um problema grande como uma =
+falha nos =E2=80=9Ccharts.js=E2=80=9D talvez seja necess=C3=A1rio fazer alt=
+era=C3=A7=C3=B5es em diversos lugares do ambiente.</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd"><p>Escalonamen=
+to/convoca=C3=A7=C3=A3o de diversas pessoas</p></td>
+<td class=3D"confluenceTd"><p>Para fazer a mudan=C3=A7a no ambiente, =C3=A9=
+ poss=C3=ADvel que um time t=C3=A9cnico tenha que ser formado.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<h2 id=3D"GMUD-3-Todosospassos(atividades/cheklist)queprecisamserexecutados=
+namudan=C3=A7a,emordemcronol=C3=B3gicaedefini=C3=A7=C3=A3odasdepend=C3=AAnc=
+iasentreasatividades">3- Todos os passos (atividades/cheklist) que precisam=
+ ser executados na mudan=C3=A7a, em ordem cronol=C3=B3gica e defini=C3=A7=
+=C3=A3o das depend=C3=AAncias entre as atividades</h2>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"0cac9df9-1c48-4cca-804d-c99=
+6bcca9fc9" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 254.0px;">
+<col style=3D"width: 372.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour=3D"#e6fcff" class=3D"confluenceTh"><p><strong>Ati=
+vidade</strong></p></th>
+<th data-highlight-colour=3D"#e6fcff" class=3D"confluenceTh"><p><strong>Des=
+cri=C3=A7=C3=A3o</strong></p></th>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd"><p>Fazer o bac=
+kup do ambiente</p></td>
+<td class=3D"confluenceTd"><p>Salvar todo o ambiente antes de iniciar qualq=
+uer mudan=C3=A7a ou inspe=C3=A7=C3=A3o.</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd"><p>Analisar o =
+c=C3=B3digo</p></td>
+<td class=3D"confluenceTd"><p>Analisar o c=C3=B3digo para a obten=C3=A7=C3=
+=A3o do problema.</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd"><p>Identificar=
+ o(s) problema(s)</p></td>
+<td class=3D"confluenceTd"><p>Identificar os erros/conflito.</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd"><p>Avisar prev=
+iamente todos os clientes da opera=C3=A7=C3=A3o</p></td>
+<td class=3D"confluenceTd"><p>Pois a opera=C3=A7=C3=A3o resultar=C3=A1 em u=
+ma queda do sistema.</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd"><p>Mudar o amb=
+iente</p></td>
+<td class=3D"confluenceTd"><p>Mudar o ambiente de =E2=80=9CProdu=C3=A7=C3=
+=A3o=E2=80=9D para =E2=80=9CDesenvolvimento=E2=80=9D.</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd"><p>Aplicar as =
+mudan=C3=A7as</p></td>
+<td class=3D"confluenceTd"><p>Os erros e conflitos descobertos ser=C3=A3o r=
+esolvidos durante essa etapa.</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd"><p><span style=
+=3D"color: rgb(76,154,255);">Teste do ambiente</span></p></td>
+<td class=3D"confluenceTd"><p>Teste do ambiente para saber se as mudan=C3=
+=A7as aplicadas resolveram o problema, observando se algum erro =C3=A9 gera=
+do no processo. Se apresentar erro, seguir <span style=3D"color: rgb(255,86=
+,48);">erro</span>, caso contr=C3=A1rio seguir com <span style=3D"color: rg=
+b(54,179,126);">finalizar</span>.</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd"><p><span style=
+=3D"color: rgb(255,86,48);">Erro</span> (em paralelo a <span style=3D"color=
+: rgb(76,154,255);">teste do ambiente)</span></p></td>
+<td class=3D"confluenceTd"><p>Escalonar o t=C3=A9cnico das =C3=A1reas envol=
+vidas.</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd"><p><span style=
+=3D"color: rgb(54,179,126);">Finalizar</span></p></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Documentar o processo para a solu=C3=A7=C3=A3o do problema;</p></li>
+<li><p>An=C3=BAncio da volta do sistema;</p></li>
+<li><p>An=C3=BAncio da solu=C3=A7=C3=A3o do problema.</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p>4- Respons=C3=A1veis </p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"59c351d6-6fee-4521-bb8c-e9f=
+155a35c9d" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 144.0px;">
+<col style=3D"width: 142.0px;">
+<col style=3D"width: 104.0px;">
+<col style=3D"width: 230.0px;">
+<col style=3D"width: 140.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>Respons=C3=A1veis</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Fun=C3=A7=C3=B5es</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Data</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Como</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Onde</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Willians Ribeiro</p></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Respons=C3=A1vel pela infraestrutura do projeto</p></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>26/11/2021</p></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Realizar a an=C3=A1lise b=C3=A1sica do sistema;</p></li>
+</ul>
+<ul>
+<li><p>Documentar o processo. </p></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>Local: Rua Haddock Lobo,595</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Guilherme Goes</p></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Respons=C3=A1vel pela infraestrutura do projeto</p></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>27-11-2021</p></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Estando a par do que foi documentado, analisar cada funcionalidade d=
+o sistema.</p></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>Local: Rua Haddock Lobo,595</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Victor Veniti</p></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Respons=C3=A1vel pela Interface de programa=C3=A7=C3=A3o de aplica=
+=C3=A7=C3=B5es</p></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>29-11-2021</p></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Estando a par da documenta=C3=A7=C3=A3o, ir para o processo da conex=
+=C3=A3o do website com o banco de dados.</p></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>Local: Rua Haddock Lobo,595</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Augusto Souza</p></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Respons=C3=A1vel pelo Banco de Dados </p></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>27-11-2021</p></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>A par da documenta=C3=A7=C3=A3o, se os dados do banco de dados n=C3=
+=A3o condizerem com o database da Interface de programa=C3=A7=C3=A3o de apl=
+ica=C3=A7=C3=B5es, fazer as devidas corre=C3=A7=C3=B5es. </p></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>Local: Rua Haddock Lobo,595</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Christian Tobias</p></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Respons=C3=A1vel pelo Banco de Dados </p></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>28-11-2021</p></td>
+<td class=3D"confluenceTd">
+<ul>
+<li><p>Analisar se a DATABASE e a TABLE criada no MySQL Workbench est=C3=A1=
+ condizendo com o database da Interface de programa=C3=A7=C3=A3o de aplica=
+=C3=A7=C3=B5es.</p></li>
+</ul></td>
+<td class=3D"confluenceTd"><p>Local: Rua Haddock Lobo,595</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p>5- Cronograma e limite para as a=C3=A7=C3=B5es </p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"16a1fdf0-6838-4195-bb91-325=
+49f561bdd" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 226.67px;">
+<col style=3D"width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>O que</strong></p></th>
+<th class=3D"confluenceTh"><p><strong>Quando</strong></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Fase de analise e detec=C3=A7=C3=A3o dos erro=
+s</p></td>
+<td class=3D"confluenceTd"><p>Do come=C3=A7o do chamado/Gmud at=C3=A9 o in=
+=C3=ADcio da opera=C3=A7=C3=A3o.</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Processo de backup</p></td>
+<td class=3D"confluenceTd"><p>23:50</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>In=C3=ADcio da opera=C3=A7=C3=A3o</p></td>
+<td class=3D"confluenceTd"><p>00:00</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Fase de teste do ambiente</p></td>
+<td class=3D"confluenceTd"><p>02:00 (previsto)</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>(Caso ocorra) Fase de escalonamento</p></td>
+<td class=3D"confluenceTd"><p>02:30-03:00</p></td>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>Fim da fase de opera=C3=A7=C3=A3o/teste</p></=
+td>
+<td class=3D"confluenceTd"><p>03:30-04:00 (previsto)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>6- Procedimento de escalonamento </p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"65771e4a-e33e-4c35-b114-981=
+3381c69a8" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 226.67px;">
+<col style=3D"width: 226.67px;">
+<col style=3D"width: 226.67px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour=3D"#fffae6" class=3D"confluenceTh"><p><strong>Que=
+m</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" class=3D"confluenceTh"><p><strong>Qua=
+ndo</strong></p></th>
+<th data-highlight-colour=3D"#fffae6" class=3D"confluenceTh"><p><strong>Res=
+pons=C3=A1veis por qual valida=C3=A7=C3=A3o </strong></p></th>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#fffae6" class=3D"confluenceTd"><p>Guilherme G=
+oes</p></td>
+<td class=3D"confluenceTd"><p>No intervalo do in=C3=ADcio da opera=C3=A7=C3=
+=A3o at=C3=A9 a fase de teste</p></td>
+<td class=3D"confluenceTd"><p>Todas as valida=C3=A7=C3=B5es/solu=C3=A7=C3=
+=B5es que interferem na arquitetura do ambiente. </p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#fffae6" class=3D"confluenceTd"><p>Augusto Sou=
+za</p></td>
+<td class=3D"confluenceTd"><p>No intervalo do in=C3=ADcio da opera=C3=A7=C3=
+=A3o at=C3=A9 a fase de teste</p></td>
+<td class=3D"confluenceTd"><p>Todas as valida=C3=A7=C3=B5es/solu=C3=A7=C3=
+=B5es que interferem no banco de dados. </p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#fffae6" class=3D"confluenceTd"><p>Victor Veni=
+ti</p></td>
+<td class=3D"confluenceTd"><p>Fase de escalonamento</p></td>
+<td class=3D"confluenceTd"><p>Se alguma mudan=C3=A7a n=C3=A3o for efetiva o=
+u funcional, Veniti ser=C3=A1 acionado para assumir</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#fffae6" class=3D"confluenceTd"><p>Cristhian T=
+obias</p></td>
+<td class=3D"confluenceTd"><p>Fase de escalonamento</p></td>
+<td class=3D"confluenceTd"><p>Se alguma mudan=C3=A7a n=C3=A3o for efetiva o=
+u funcional, Cristhian ser=C3=A1 acionado para assumir</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p></p>
+<p>7- Todos os passos (atividades/ checklist) que precisam ser executas par=
+a retomar a situa=C3=A7=C3=A3o anterior, em caso de problemas na execu=C3=
+=A7=C3=A3o da mudan=C3=A7a</p>
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" data-local-id=3D"20485b62-3cb3-4642-92f2-f04=
+111964286" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 254.0px;">
+<col style=3D"width: 372.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour=3D"#e6fcff" class=3D"confluenceTh"><p><strong>Ati=
+vidade</strong></p></th>
+<th data-highlight-colour=3D"#e6fcff" class=3D"confluenceTh"><p><strong>Des=
+cri=C3=A7=C3=A3o</strong></p></th>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd"><p>Retomar o b=
+ackup</p></td>
+<td class=3D"confluenceTd"><p>Fazer a troca de ambientes, o que est=C3=A1 a=
+tualmente com a mudan=C3=A7a implantada para o antes da vers=C3=A3o anterio=
+r as mudan=C3=A7as. </p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd"><p>Teste do am=
+biente</p></td>
+<td class=3D"confluenceTd"><p>Testar o ambiente novamente para validar se o=
+ sistema ainda funciona (claro mesmo com o =E2=80=9Cproblema anterior=E2=80=
+=9D).</p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd"><p>Planejament=
+o da pr=C3=B3xima GMUD</p></td>
+<td class=3D"confluenceTd"><p>Ap=C3=B3s a opera=C3=A7=C3=A3o de retorno par=
+a o antigo ambiente, planejar a pr=C3=B3xima mudan=C3=A7a para o mais breve=
+ poss=C3=ADvel dado a disponibilidade do time.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_6_37602456.1638308858390--
