@@ -21,23 +21,56 @@ router.get('/', (request, response, next) => {
 router.post('/sendData', (request, response) => {
    var proximidade = ArduinoDataTemp.List[ArduinoDataTemp.List.length - 1];
     console.log(proximidade);
-    let data_agora = new Date();
 
-    var hora = (Math.random()*24).toFixed();
-    var min = (Math.random()*59).toFixed();
-    var seg = (Math.random()*59).toFixed();
-    console.log(hora);
+
+    // var sql = `insert into medida(statusVaga, dataRegistro) values(${proximidade}, current_timestamp()); `
+    // var sql = `insert into medida(statusVaga, dataRegistro) values(${proximidade}, current_timestamp()); `
+
+    var sql = `update medida set statusVaga = ${proximidade}, dataRegistro = current_timestamp() where idSensor = 1`
+
     
-
-    // var sql = `INSERT INTO sensor(statusVaga) VALUES(${proximidade})`;
-    var sql = `insert into medida(statusVaga, horaEntrada) values(${proximidade}, '${hora}:${min}:${seg}'); `
-
     db.query(sql, function(err, result){
         if(err) throw err;
         console.log("Medidas inseridas: " + result.affectedRows)
     });
     response.sendStatus(200);
 })
+
+router.post('/sendData2', (request, response) => {
+    var proximidade2 = ArduinoDataTemp.List[ArduinoDataTemp.List.length - 2];
+     console.log(proximidade2);
+ 
+ 
+     // var sql = `insert into medida(statusVaga, dataRegistro) values(${proximidade}, current_timestamp()); `
+     // var sql = `insert into medida(statusVaga, dataRegistro) values(${proximidade}, current_timestamp()); `
+ 
+     var sql = `update medida set statusVaga = ${proximidade2}, dataRegistro = current_timestamp() where idSensor = 2`
+ 
+     
+     db.query(sql, function(err, result){
+         if(err) throw err;
+         console.log("Medidas inseridas: " + result.affectedRows)
+     });
+     response.sendStatus(200);
+ })
+
+ router.post('/sendData3', (request, response) => {
+    var proximidade3 = ArduinoDataTemp.List[ArduinoDataTemp.List.length - 3];
+     console.log(proximidade3);
+ 
+ 
+     // var sql = `insert into medida(statusVaga, dataRegistro) values(${proximidade}, current_timestamp()); `
+     // var sql = `insert into medida(statusVaga, dataRegistro) values(${proximidade}, current_timestamp()); `
+ 
+     var sql = `update medida set statusVaga = ${proximidade3}, dataRegistro = current_timestamp() where idSensor = 3`
+ 
+     
+     db.query(sql, function(err, result){
+         if(err) throw err;
+         console.log("Medidas inseridas: " + result.affectedRows)
+     });
+     response.sendStatus(200);
+ })
 
 
 module.exports = router;

@@ -138,9 +138,23 @@
 			http.send(null);
 		}
 
+		function sendData2(){
+			var http = new XMLHttpRequest();
+			http.open('POST','http://localhost:3000/api/sendData2', false);
+			http.send(null);
+		}
+
+		function sendData3(){
+			var http = new XMLHttpRequest();
+			http.open('POST','http://localhost:3000/api/sendData3', false);
+			http.send(null);
+		}
+
 		setInterval(() => {
 			get_data();
 			sendData();
+			sendData2();
+			sendData3();
 		}, 1000);
 
 	</script>

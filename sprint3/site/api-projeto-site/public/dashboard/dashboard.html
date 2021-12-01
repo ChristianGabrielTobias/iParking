@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AcquaTec | Página Inicial</title>
+    <title>iParking | Página Inicial</title>
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="dashboards.css">
@@ -21,10 +21,10 @@
 
 </head>
 
-<body onload="/*validarSessao(),*/ obterDadosGrafico(1)">
+<body onload="validarSessao(), obterDadosGrafico(1)">
     <div class="janela">
         <div class="header-left">
-            <h1>AcquaTec</h1>
+            <h1>Iparking</h1>
 
             <div class="hello">
                 <h3>Olá, <span id="b_usuario"></span>!</h3>
@@ -32,7 +32,7 @@
 
             <div class="btn-nav-white">
                 <a href="./cards.html">
-                    <h3>Aquários</h3>
+                    <h3>Vagas</h3>
                 </a>
             </div>
 
@@ -57,10 +57,10 @@
         <div class="dash">
             <div class="btns-dash">
                 <!-- O gráfico é chamado de acordo com o id (fk_aquario) do banco  -->
-                <button class="btn-chart" onclick="obterDadosGrafico(1)">Aquario 1</button>
-                <button class="btn-chart" onclick="obterDadosGrafico(2)">Aquario 2</button>
-                <button class="btn-chart" onclick="obterDadosGrafico(3)">Aquario 3</button>
-                <button class="btn-chart" onclick="obterDadosGrafico(4)">Aquario 4</button>
+                <button class="btn-chart" onclick="obterDadosGrafico(1)">Vaga 1</button>
+                <button class="btn-chart" onclick="obterDadosGrafico(2)">Vaga 2</button>
+                <button class="btn-chart" onclick="obterDadosGrafico(3)">Vaga 3</button>
+                <button class="btn-chart" onclick="obterDadosGrafico(4)">Vaga 4</button>
             </div>
             <div class="graph">
                 <canvas id="canvas_grafico"></canvas>
@@ -81,18 +81,19 @@
 
     // altere aqui como os dados serão exibidos
     // e como são recuperados do BackEnd
-    function obterDadosGrafico(idAquario) {
+    function obterDadosGrafico(statusVaga) {
+        b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
         if (proximaAtualizacao != undefined) {
             clearTimeout(proximaAtualizacao);
         }
 
-        fetch(`/medidas/ultimas/${idAquario}`, { cache: 'no-store' }).then(function (response) {
+        fetch("/medidas/ultimas", { cache: 'no-store' }).then(function (response) {
             if (response.ok) {
                 response.json().then(function (resposta) {
                     console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
                     resposta.reverse();
 
-                    plotarGrafico(resposta, idAquario);
+                    plotarGrafico(resposta, statusVaga);
                 });
             } else {
                 console.error('Nenhum dado encontrado ou erro na API');
@@ -124,8 +125,8 @@
 
         for (i = 0; i < resposta.length; i++) {
             var registro = resposta[i];
-            dados.labels.push(registro.momento_grafico);
-            dados.datasets[0].data.push(registro.umidade);
+            dados.labels.push(registro.dataRegistro);
+            dados.datasets[0].data.push(registro.statusVaga);
         }
 
         console.log(JSON.stringify(dados));
@@ -170,7 +171,7 @@
     // só mexer se quiser alterar o tempo de atualização
     // ou se souber o que está fazendo!
     function atualizarGrafico(statusVaga, dados) {
-        fetch(`/medidas/tempo-real/${statusVaga}`, { cache: 'no-store' }).then(function (response) {
+        fetch("/medidas/tempo-real", { cache: 'no-store' }).then(function (response) {
             if (response.ok) {
                 response.json().then(function (novoRegistro) {
 
@@ -179,9 +180,9 @@
 
                     // tirando e colocando valores no gráfico
                     dados.labels.shift(); // apagar o primeiro
-                    dados.labels.push(novoRegistro[0].momento_grafico); // incluir um novo momento
+                    dados.labels.push(novoRegistro[0].dataRegistro); // incluir um novo momento
                     dados.datasets[0].data.shift();  // apagar o primeiro de umidade
-                    dados.datasets[0].data.push(novoRegistro[0].umidade); // incluir uma nova medida de umidade
+                    dados.datasets[0].data.push(novoRegistro[0].statusVaga); // incluir uma nova medida de umidade
 
                     window.grafico_linha.update();
 
