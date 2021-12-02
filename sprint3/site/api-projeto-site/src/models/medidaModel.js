@@ -14,10 +14,12 @@ function buscarMedidasEmTempoReal(statusVaga, limite_linhas) {
     return database.executar(instrucaoSql);
 }
 
-function vaga1(idSensor, statusVaga){
+function vaga1(instrucaoSql){
 
     instrucaoSql = `select statusVaga from medida where idSensor = 1`
+    return database.executar(instrucaoSql);
 }
+console.log(vaga1())
 
 
 module.exports = {

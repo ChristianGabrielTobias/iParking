@@ -13,10 +13,10 @@ function trc5000() {
 
   let random = Math.random() * (max - min) + min;
 
-  if (random >= 0.7) {
+  if (random >= 0.5) {
     return 1;
-  } else if (random <= 0.7) {
-    return -1;
+  } else if (random <= 0.5) {
+    return 0;
   }
 }
 

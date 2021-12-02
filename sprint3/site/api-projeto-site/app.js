@@ -24,6 +24,7 @@ app.use("/usuarios", usuarioRouter);
 app.use("/avisos", avisosRouter);
 app.use("/medidas", medidasRouter)
 
+
 app.listen(PORTA, function() {
     console.log(`Servidor do site está rodando rodando: http://localhost:${PORTA} \n
     Você está rodando sua aplicação em ${process.env.AMBIENTE_PROCESSO} \n

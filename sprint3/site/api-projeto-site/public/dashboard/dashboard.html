@@ -21,11 +21,13 @@
 
 </head>
 
-<body onload="/*validarSessao(),*/ obterDadosGrafico(1)">
+<body onload="/*validarSessao(),*/ obterDadosGrafico(1), atualizarvaga()">
     <div class="janela">
         <div class="header-left">
             <h1>Iparking</h1>
-            <div id="vaga_1" class="vaga1"></div>
+            <div id="vaga_1" class="vaga1" style="background-color: gray;"></div>
+            <button onclick="vagaN1()">FUNCIONA</button>
+
 
             <div class="hello">
                 <h3>Olá, <span id="b_usuario"></span>!</h3>
@@ -70,15 +72,11 @@
     </div>
 
 
-
-
 </body>
 
 </html>
 
 <script>
-
- 
 
     let proximaAtualizacao;
 
@@ -109,6 +107,8 @@
             });
 
     }
+
+
 
     // só altere aqui se souber o que está fazendo!
     function plotarGrafico(resposta, statusVaga) { /*mudei*/
@@ -173,13 +173,20 @@
         setTimeout(() => atualizarGrafico(statusVaga, dados), 2000); /*mudei*/
     }
 
-    // só mexer se quiser alterar o tempo de atualização
-    // ou se souber o que está fazendo!
+//     function funciona()
+// }
+
+// só mexer se quiser alterar o tempo de atualização
+// ou se souber o que está fazendo!
+
+    function atualizarvaga(statusVaga){fetch("/medidas/ocupada").then(function cores(){if(statusVaga == 1){vaga_1.style.backgroundColor = 'red'} if(statusVaga == 0){vaga_1.style.backgroundColor = 'green'}console.log(statusVaga)});setTimeout(() => atualizarvaga(statusVaga), 1000);}
+        
+
     function atualizarGrafico(statusVaga, dados) {
         fetch("/medidas/tempo-real", { cache: 'no-store' }).then(function (response) {
             if (response.ok) {
                 response.json().then(function (novoRegistro) {
-
+                    
                     console.log(`Dados recebidos: ${JSON.stringify(novoRegistro)}`);
                     console.log(`Dados atuais do gráfico: ${dados}`);
 
@@ -188,10 +195,11 @@
                     dados.labels.push(novoRegistro[0].dataRegistro); // incluir um novo momento
                     dados.datasets[0].data.shift();  // apagar o primeiro de umidade
                     dados.datasets[0].data.push(novoRegistro[0].statusVaga); // incluir uma nova medida de umidade
-
+                    
                     window.grafico_linha.update();
-
+                    
                     proximaAtualizacao = setTimeout(() => atualizarGrafico(statusVaga, dados), 5000);/*Mudei*/
+                    // if (statusVaga == 1) { div_1.style.backgroundColor = 'red' } else { div_1.style.backgroundColor = 'green' }
                 });
             } else {
                 console.error('Nenhum dado encontrado ou erro na API');
@@ -202,5 +210,7 @@
                 console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
             });
 
+
     }
+
 </script>
