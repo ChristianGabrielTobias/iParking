@@ -2,15 +2,16 @@ var medidaModel = require("../models/medidaModel");
 
 function buscarUltimasMedidas(req, res) {
 
-    const limite_linhas = 7;
+    const limite_linhas = 10;
 
 	// var idAquario = req.params.idAquario;
+    var idSensor = req.params.idSensor;
     var statusVaga = req.params.statusVaga;
     var dataRegistro = req.params.statusVaga;    
 
 	console.log(`Recuperando as ultimas ${limite_linhas} medidas`);
 
-    medidaModel.buscarUltimasMedidas(statusVaga, dataRegistro, limite_linhas).then(function (resultado) {
+    medidaModel.buscarUltimasMedidas(idSensor, statusVaga, dataRegistro, limite_linhas).then(function (resultado) {
         if (resultado.length > 0) {
             res.status(200).json(resultado);
         } else {
@@ -25,13 +26,32 @@ function buscarUltimasMedidas(req, res) {
 
 
 function buscarMedidasEmTempoReal(req, res) {
-
+    var idSensor = req.params.idSensor;
     var statusVaga= req.params.statusVaga;
     var dataRegistro= req.params.dataRegistro;
 
 	console.log(`Recuperando medidas em tempo real`);
 
-    medidaModel.buscarMedidasEmTempoReal(statusVaga, dataRegistro).then(function (resultado) {
+    medidaModel.buscarMedidasEmTempoReal(idSensor, statusVaga, dataRegistro).then(function (resultado) {
+        if (resultado.length > 0) {
+            res.status(200).json(resultado);
+        } else {
+            res.status(204).send("Nenhum resultado encontrado!")
+        }
+    }).catch(function (erro) {
+        console.log(erro);
+        console.log("Houve um erro ao buscar as ultimas medidas.", erro.sqlMessage);
+        res.status(500).json(erro.sqlMessage);
+    });
+}
+
+function vaga1(){
+    var idSensor = req.params.idSensor;
+    var statusVaga = req.params.statusVaga;
+
+	console.log(`Recuperando medidas em tempo real`);
+
+    medidaModel.vaga1(idSensor, statusVaga).then(function (resultado) {
         if (resultado.length > 0) {
             res.status(200).json(resultado);
         } else {
@@ -46,6 +66,7 @@ function buscarMedidasEmTempoReal(req, res) {
 
 module.exports = {
     buscarUltimasMedidas,
-    buscarMedidasEmTempoReal
+    buscarMedidasEmTempoReal,
+    vaga1
     
 }

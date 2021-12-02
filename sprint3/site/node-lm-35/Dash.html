@@ -150,11 +150,61 @@
 			http.send(null);
 		}
 
+		function sendData4(){
+			var http = new XMLHttpRequest();
+			http.open('POST','http://localhost:3000/api/sendData4', false);
+			http.send(null);
+		}
+
+		function sendData5(){
+			var http = new XMLHttpRequest();
+			http.open('POST','http://localhost:3000/api/sendData5', false);
+			http.send(null);
+		}
+
+		function sendData6(){
+			var http = new XMLHttpRequest();
+			http.open('POST','http://localhost:3000/api/sendData6', false);
+			http.send(null);
+		}
+
+		function sendData7(){
+			var http = new XMLHttpRequest();
+			http.open('POST','http://localhost:3000/api/sendData7', false);
+			http.send(null);
+		}
+
+		function sendData8(){
+			var http = new XMLHttpRequest();
+			http.open('POST','http://localhost:3000/api/sendData8', false);
+			http.send(null);
+		}
+
+		function sendData9(){
+			var http = new XMLHttpRequest();
+			http.open('POST','http://localhost:3000/api/sendData9', false);
+			http.send(null);
+		}
+
+		function sendData10(){
+			var http = new XMLHttpRequest();
+			http.open('POST','http://localhost:3000/api/sendData10', false);
+			http.send(null);
+		}
+
 		setInterval(() => {
 			get_data();
 			sendData();
 			sendData2();
 			sendData3();
+			sendData4();
+			sendData5();
+			sendData6();
+			sendData7();
+			sendData8();
+			sendData9();
+			sendData10();
+
 		}, 1000);
 
 	</script>

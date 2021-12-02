@@ -1,23 +1,29 @@
 var database = require("../database/config");
 
 function buscarUltimasMedidas(teste, statusVaga,limite_linhas) {
-    instrucaoSql = `select statusVaga, dataRegistro from medida order by idSensor desc limit 7;`
+    instrucaoSql = `select idSensor, statusVaga, dataRegistro from medida order by idSensor desc limit 10;`
     console.log("Executando a instrução SQL: \n"+instrucaoSql);
     return database.executar(instrucaoSql);
 }
 
 
 function buscarMedidasEmTempoReal(statusVaga, limite_linhas) {
-    instrucaoSql = `select statusVaga, dataRegistro from medida order by idSensor desc limit 7;`;
+    instrucaoSql = `select idSensor, statusVaga, dataRegistro from medida order by idSensor desc limit 10;`;
                     
     console.log("Executando a instrução SQL: \n"+instrucaoSql);
     return database.executar(instrucaoSql);
 }
 
+function vaga1(idSensor, statusVaga){
+
+    instrucaoSql = `select statusVaga from medida where idSensor = 1`
+}
+
 
 module.exports = {
     buscarUltimasMedidas,
-    buscarMedidasEmTempoReal
+    buscarMedidasEmTempoReal,
+    vaga1
 }
 
 // select temperatura, 
