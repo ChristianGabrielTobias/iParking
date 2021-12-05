@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iParking</title>
+    <link rel="stylesheet" href="Cadastro.css">
+</head>
+
+<body>
+
+    <div class="div_cadastro">
+        <div class="container">
+            <div id="sobre">
+
+            </div>
+
+            <form id="form_cadastro" method="post" onsubmit="return cadastrar()"></form>
+            <h2>
+                <u style="font-family: 'Times New Roman', Times, serif;">
+                    Cadastro
+                </u>
+            </h2>
+
+            <div class="container_dois">
+                <div class="div_dados">
+                    <span class="tamanho">
+                        Nome da empresa:
+                    </span>
+                    <input name="nome" placeholder="Nome da empresa"><br><br>
+
+                    <span class="tamanho">
+                        E-mail:
+                    </span>
+                    <input name="email" type="email" placeholder="iParking@bandtec.com.br"><br><br>
+
+                    <span class="tamanho">
+                        Telefone:
+                    </span>
+                    <input name="telefone" placeholder="(+55)1234-5678"><br><br>
+
+                    <span class="tamanho">
+                        Senha:
+                    </span>
+                    <input name="senha" type="password" placeholder="**********">
+                </div>
+                <div class="div_info">
+                    <span class="tamanho">
+                        Endereço:
+                    </span>
+                    <input name="endereço" placeholder="Rua Jabuticaba"><br><br>
+
+                    <span class="tamanho">
+                        CNPJ:
+                    </span>
+                    <input name="cnpj" placeholder="CPF/CNPJ"><br><br>
+
+                    <span class="tamanho">
+                        Confirmar senha:
+                    </span>
+                    <input name="confirmar_senha" type="password" placeholder="**********"><br>
+                    <button class="btn">cadastar</button>
+                    </form>
+                </div>
+            </div>
+            <div id="div_aguardar" class="loading-div">
+                <img src="./assets/circle-loading.gif" id="loading-gif">
+            </div>
+            <div id="div_erros_login">
+                    
+                </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function limparFormulario() {
+        document.getElementById("form_cadastro").reset();
+    }
+
+    function cadastrar() {
+        aguardar();
+    }
+
+    var formulario = new URLSearchParams(new FormData(document.getElementById("form_cadastro")));
+
+    var nome = formulario.get("nome");
+    var email = formulario.get("email");
+    var telefone = formulario.get("telefone");
+    var senha = formulario.get("senha");
+    var endereço = formulario.get("endereço");
+    var cnpj = formulario.get("cnpj");
+    var confirmacaoSenha = formulario.get("confirmacao-senha");
+
+    if (nome == "" || email == "" || senha == "" || confirmacaoSenha == "" || cnpj == "" || endereço == "" || telefone == "") {
+
+        window.alert("Preencha todos os campos para prosseguir!");
+        if (nome == "") {
+            console.log('nome está em branco')
+        }
+        if (email == "") {
+            console.log('email está em branco')
+        }
+        if (senha == "") {
+            console.log('senha está em branco')
+        }
+        if (confirmacaoSenha == "") {
+            console.log('confirmação de senha está em branco')
+        }
+        if (cnpj == "") {
+            console.log('cnpj está em branco')
+        }
+        if (endereço == "") {
+            console.log('endereço está em branco')
+        }
+        if (telefone == "") {
+            console.log('telefone está em branco')
+        }
+        finalizarAguardar();
+        return false;
+    }
+
+    if (email.indexOf("@") == -1 || email.indexOf(".com") == -1) {
+        window.alert("Ops, e-mail inválido! Verifique e tente novamente.");
+        finalizarAguardar();
+        return false;
+    }
+
+    if (senha != confirmacaoSenha) {
+        window.alert("As senhas inseridas devem ser iguais para prosseguir!");
+        finalizarAguardar();
+        return false;
+    }
+
+    fetch("/usuarios/cadastrar", {
+        method: "POST",
+        body: formulario
+    }).then(function (resposta) {
+
+        console.log("resposta: ", resposta);
+
+        if (resposta.ok) {
+            window.alert("Cadastro realizado com sucesso!");
+            window.location = "login.html";
+            limparFormulario();
+            finalizarAguardar();
+        } else {
+            throw ("Houve um erro ao tentar realizar o cadastro!");
+        }
+    }).catch(function (resposta) {
+        console.log(`#ERRO: ${resposta}`);
+        finalizarAguardar();
+    });
+
+    return false;
+    
+</script>
