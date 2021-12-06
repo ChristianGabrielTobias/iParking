@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: helvetica;
+    font-family: Arial, Helvetica, sans-serif;
     color: #323232;
     border: none;
 }
@@ -10,6 +10,63 @@
 body {
     background-image: url(./fundo\ login.jpg);
     background-size: cover;
+}
+
+.header {
+    height: 9vh;
+    background-color: #8b0000;
+}
+
+.header .container {
+    width: 80%;
+    height: 100%;
+    margin: auto;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.header .container h1 {
+    color: whitesmoke;
+    font-size: 60px;
+    text-decoration: none;
+}
+
+.navbar{  
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    color: white;
+}
+
+.navbar li{
+    margin-right: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+.navbar li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover{
+   color: black;
+}
+
+.navbar .active{
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.div_centralizar {
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 textarea:focus, input:focus {
@@ -76,5 +133,16 @@ input:focus {
     border-radius: 20px;
     margin-top: 30px;
     color: white;
-    
+}
+
+.footer {
+    background-color: #8b0000;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h4 {
+    color: white;
 }
