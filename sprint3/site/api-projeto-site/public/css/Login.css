@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-    height: 9vh;
+    height: 11vh;
     background-color: #8b0000;
 }
 
@@ -63,7 +63,7 @@ body {
 }
 
 .div_centralizar {
-    height: 87vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
