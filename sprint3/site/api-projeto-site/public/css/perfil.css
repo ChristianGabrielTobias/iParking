@@ -119,17 +119,27 @@
     border: black 4px solid;
     margin: 10px;
     padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 26px;
 }
 
 
 .div_contV {
   height: 100px;
-  width: 200px;
+  width: 272px;
   border: black 3px solid;
 }
 
 .vaga1 {
-  background-color: gray;
+  border: black 3px solid;
   width: 40px;
   height: 40px;
+  display: block;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }

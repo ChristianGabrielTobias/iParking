@@ -23,7 +23,7 @@
 
 </head>
 
-<body onload="/*validarSessao(),*/ obterDadosGrafico(1), atualizarvaga()">
+<body onload="/*validarSessao(),*/ obterDadosGrafico(1), atualizarvaga(), atualizarvaga2(), atualizarvaga3(), atualizarvaga4(), atualizarvaga5(), atualizarvaga6(), atualizarvaga7(), atualizarvaga8(), atualizarvaga9(), atualizarvaga10()">
 
 
     <!-- Aqui está o menu lateral -->
@@ -45,17 +45,92 @@
     <div class="div_vagas">
 
         <div class="div_contV">
-            <div id="vaga_1" class="vaga1"></div>
+            <div id="vaga_1" class="vaga1" style="background-color: gray;">
+            </div>
+            <div class="text">
+            <b>Local da Vaga:</b> 1º andar lado A
+        </div>
         </div>
 
+        <div class="div_contV">
+            <div id="vaga_2" class="vaga1">
+            </div>
+            <div class="text">
+            <b>Local da Vaga:</b> 1º andar lado A
+        </div>
+        </div>
+
+        <div class="div_contV">
+            <div id="vaga_3" class="vaga1">
+            </div>
+            <div class="text">
+            <b>Local da Vaga:</b> 1º andar lado A
+        </div>
+        </div>
+
+        <div class="div_contV">
+            <div id="vaga_4" class="vaga1">
+            </div>
+            <div class="text">
+            <b>Local da Vaga:</b> 1º andar lado A
+        </div>
+        </div>
+
+        <div class="div_contV">
+            <div id="vaga_5" class="vaga1">
+            </div>
+            <div class="text">
+            <b>Local da Vaga:</b> 1º andar lado A
+        </div>
+        </div>
+
+        <div class="div_contV">
+            <div id="vaga_6" class="vaga1">
+            </div>
+            <div class="text">
+            <b>Local da Vaga:</b> 1º andar lado A
+        </div>
+        </div>
+
+        <div class="div_contV">
+            <div id="vaga_7" class="vaga1">
+            </div>
+            <div class="text">
+            <b>Local da Vaga:</b> 1º andar lado A
+        </div>
+        </div>
+
+        <div class="div_contV">
+            <div id="vaga_8" class="vaga1">
+            </div>
+            <div class="text">
+            <b>Local da Vaga:</b> 1º andar lado A
+        </div>
+        </div>
+
+        <div class="div_contV">
+            <div id="vaga_9" class="vaga1">
+            </div>
+            <div class="text">
+            <b>Local da Vaga:</b> 1º andar lado A
+        </div>
+        </div>
+
+        <div class="div_contV">
+            <div id="vaga_10" class="vaga1">
+            </div>
+            <div class="text">
+            <b>Local da Vaga:</b> 1º andar lado A
+        </div>
+        </div>
     </div>
 
-    <div class="dashboard" style="display: none;">
+    
+
+    <div class="dashboard" style="display: block;">
         <div class="janela">
             <div class="header-left">
                 <h1>Iparking</h1>
-                <button onclick="vagaN1()">FUNCIONA</button>
-
 
                 <div class="hello">
                     <h3>Olá, <span id="b_usuario"></span>!</h3>
@@ -215,15 +290,169 @@
                     console.log(respostaFormatada)
                     console.log(respostaFormatada[0].statusVaga)
                     if (respostaFormatada[0].statusVaga == 1) {
-                        vaga_1.style.backgroundColor = 'red'
+                        vaga_1.style.backgroundColor = "red"
                     }
-                    else if (respostaFormatada[0].statusVaga == 0) {
-                        vaga_1.style.backgroundColor = 'green'
+                     if (respostaFormatada[0].statusVaga == 0) {
+                        vaga_1.style.backgroundColor = "green"
                     }
                 });
             });
         setTimeout(() => atualizarvaga(statusVaga), 1000);
     }
+
+    function atualizarvaga2(statusVaga) {
+        fetch("/medidas/ocupada2")
+            .then(function (resposta) {
+                resposta.json().then(function (respostaFormatada) {
+                    console.log(respostaFormatada)
+                    console.log(respostaFormatada[0].statusVaga)
+                    if (respostaFormatada[0].statusVaga == 1) {
+                        vaga_2.style.backgroundColor = "red"
+                    }
+                     if (respostaFormatada[0].statusVaga == 0) {
+                        vaga_2.style.backgroundColor = "green"
+                    }
+                });
+            });
+        setTimeout(() => atualizarvaga2(statusVaga), 1000);
+    }
+
+    function atualizarvaga3(statusVaga) {
+        fetch("/medidas/ocupada3")
+            .then(function (resposta) {
+                resposta.json().then(function (respostaFormatada) {
+                    console.log(respostaFormatada)
+                    console.log(respostaFormatada[0].statusVaga)
+                    if (respostaFormatada[0].statusVaga == 1) {
+                        vaga_3.style.backgroundColor = "red"
+                    }
+                     if (respostaFormatada[0].statusVaga == 0) {
+                        vaga_3.style.backgroundColor = "green"
+                    }
+                });
+            });
+        setTimeout(() => atualizarvaga3(statusVaga), 1000);
+    }
+
+    function atualizarvaga4(statusVaga) {
+        fetch("/medidas/ocupada4")
+            .then(function (resposta) {
+                resposta.json().then(function (respostaFormatada) {
+                    console.log(respostaFormatada)
+                    console.log(respostaFormatada[0].statusVaga)
+                    if (respostaFormatada[0].statusVaga == 1) {
+                        vaga_4.style.backgroundColor = "red"
+                    }
+                     if (respostaFormatada[0].statusVaga == 0) {
+                        vaga_4.style.backgroundColor = "green"
+                    }
+                });
+            });
+        setTimeout(() => atualizarvaga4(statusVaga), 1000);
+    }
+
+    function atualizarvaga5(statusVaga) {
+        fetch("/medidas/ocupada5")
+            .then(function (resposta) {
+                resposta.json().then(function (respostaFormatada) {
+                    console.log(respostaFormatada)
+                    console.log(respostaFormatada[0].statusVaga)
+                    if (respostaFormatada[0].statusVaga == 1) {
+                        vaga_5.style.backgroundColor = "red"
+                    }
+                     if (respostaFormatada[0].statusVaga == 0) {
+                        vaga_5.style.backgroundColor = "green"
+                    }
+                });
+            });
+        setTimeout(() => atualizarvaga5(statusVaga), 1000);
+    }
+
+    function atualizarvaga6(statusVaga) {
+        fetch("/medidas/ocupada6")
+            .then(function (resposta) {
+                resposta.json().then(function (respostaFormatada) {
+                    console.log(respostaFormatada)
+                    console.log(respostaFormatada[0].statusVaga)
+                    if (respostaFormatada[0].statusVaga == 1) {
+                        vaga_6.style.backgroundColor = "red"
+                    }
+                     if (respostaFormatada[0].statusVaga == 0) {
+                        vaga_6.style.backgroundColor = "green"
+                    }
+                });
+            });
+        setTimeout(() => atualizarvaga3(statusVaga), 1000);
+    }
+
+    function atualizarvaga7(statusVaga) {
+        fetch("/medidas/ocupada7")
+            .then(function (resposta) {
+                resposta.json().then(function (respostaFormatada) {
+                    console.log(respostaFormatada)
+                    console.log(respostaFormatada[0].statusVaga)
+                    if (respostaFormatada[0].statusVaga == 1) {
+                        vaga_7.style.backgroundColor = "red"
+                    }
+                     if (respostaFormatada[0].statusVaga == 0) {
+                        vaga_7.style.backgroundColor = "green"
+                    }
+                });
+            });
+        setTimeout(() => atualizarvaga7(statusVaga), 1000);
+    }
+
+    function atualizarvaga8(statusVaga) {
+        fetch("/medidas/ocupada8")
+            .then(function (resposta) {
+                resposta.json().then(function (respostaFormatada) {
+                    console.log(respostaFormatada)
+                    console.log(respostaFormatada[0].statusVaga)
+                    if (respostaFormatada[0].statusVaga == 1) {
+                        vaga_8.style.backgroundColor = "red"
+                    }
+                     if (respostaFormatada[0].statusVaga == 0) {
+                        vaga_8.style.backgroundColor = "green"
+                    }
+                });
+            });
+        setTimeout(() => atualizarvaga8(statusVaga), 1000);
+    }
+
+    function atualizarvaga9(statusVaga) {
+        fetch("/medidas/ocupada9")
+            .then(function (resposta) {
+                resposta.json().then(function (respostaFormatada) {
+                    console.log(respostaFormatada)
+                    console.log(respostaFormatada[0].statusVaga)
+                    if (respostaFormatada[0].statusVaga == 1) {
+                        vaga_9.style.backgroundColor = "red"
+                    }
+                     if (respostaFormatada[0].statusVaga == 0) {
+                        vaga_9.style.backgroundColor = "green"
+                    }
+                });
+            });
+        setTimeout(() => atualizarvaga9(statusVaga), 1000);
+    }
+
+    function atualizarvaga10(statusVaga) {
+        fetch("/medidas/ocupada10")
+            .then(function (resposta) {
+                resposta.json().then(function (respostaFormatada) {
+                    console.log(respostaFormatada)
+                    console.log(respostaFormatada[0].statusVaga)
+                    if (respostaFormatada[0].statusVaga == 1) {
+                        vaga_10.style.backgroundColor = "red"
+                    }
+                     if (respostaFormatada[0].statusVaga == 0) {
+                        vaga_10.style.backgroundColor = "green"
+                    }
+                });
+            });
+        setTimeout(() => atualizarvaga10(statusVaga), 1000);
+    }
+
 
 
     function atualizarGrafico(statusVaga, dados) {

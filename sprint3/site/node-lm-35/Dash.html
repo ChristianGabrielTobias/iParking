@@ -21,7 +21,7 @@
 	<!-- Aqui está o menu lateral -->
 	<div class="nav">
 		<div class="nav-info">
-			<h1>Bem-vindo, <br /><span>Garage</span></h1>
+			<h1>Bem-vindo, <br><span>Garage</span></h1>
 			<i class="fa fa-user svg-user" style="font-size: 80px;"></i>
 		</div>
 		<ul>
@@ -192,6 +192,12 @@
 			http.send(null);
 		}
 
+		// function entradaSainda(){
+		// 	var http = new XMLHttpRequest();
+		// 	http.open('POST','http://localhost:3000/api/entradaSaida', false);
+		// 	http.send(null);
+		// }
+
 		setInterval(() => {
 			get_data();
 			sendData();
@@ -204,6 +210,7 @@
 			sendData8();
 			sendData9();
 			sendData10();
+			// entradaSainda();
 
 		}, 1000);
 

@@ -18,6 +18,25 @@ router.get('/', (request, response, next) => {
 
 });
 
+// router.post('/entradaSaida', (request, response) => {
+
+ 
+//     // var entradaD = (Math.random() * 20).toFixed();
+//     var entradaH = ((Math.random() ) * 24).toFixed();
+//     var entradaMin = (Math.random() * 59).toFixed();
+//     var entradaS = (Math.random() * 59).toFixed();
+
+//     var sql = `insert into horario(horaEntrada, fkMedida) values ('2021-12-01 ${entradaH}:${entradaMin}:${entradaS}', 1);`
+ 
+ 
+     
+//      db.query(sql, function(err, result){
+//          if(err) throw err;
+//          console.log("Medidas inseridas: " + result.affectedRows)
+//      });
+//      response.sendStatus(200);
+//  })
+
 router.post('/sendData', (request, response) => {
    var proximidade = ArduinoDataTemp.List[ArduinoDataTemp.List.length - 1];
     console.log(proximidade);
@@ -87,7 +106,7 @@ router.post('/sendData2', (request, response) => {
  })
 
  router.post('/sendData5', (request, response) => {
-    var proximidade3 = ArduinoDataTemp.List[ArduinoDataTemp.List.length - 5];
+    var proximidade5 = ArduinoDataTemp.List[ArduinoDataTemp.List.length - 5];
      console.log(proximidade5);
  
  

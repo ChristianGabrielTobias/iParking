@@ -6,24 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AcquaTec | Página Inicial</title>
+    <title>Iparking | Cadastro</title>
 
     
     <script src="./assets/js/funcoes.js"></script>
     
-    
-    <link rel="icon" href="./assets/icon/favicon.ico">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <!-- <link rel="icon" href="./assets/icon/favicon.ico"> -->
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
+    <!-- <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
 </head>
 
 <body>
 
     <!--header inicio-->
-    <div class="header">
+    <!-- <div class="header">
         <div class="container">
             <h1>AcquaTec</h1>
             <ul class="navbar">
@@ -44,47 +44,68 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
     <!--header fim-->
-
-    <div class="banner-login ">
-        <div class="container ">
-            <div class="card medio">
-                <h2>Bem-vindo!</h2>
-                <div class="formulario">
+    <div class="main-container">
+        <h1>Cadastre-se</h1>
                     <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
-                        Nome:
+                        <div class="full-box">
+                        <label for="Lnome"> Nome da empresa:</label>
                         <input name="nome" type="text" placeholder="Ada Lovelace">
-                        <br>
-                        E-mail:
+                        </div>
+                        
+                        <div class="full-box">
+                        <label for="Lcnpj"> CNPJ: </label>
+                        <input type="text" name="cnpj" id="">
+                    </div>
+
+                        <div class="full-box">    
+                        <label for="Lrua"> Rua da empresa: </label>
+                        <input type="text" name="rua" id="">
+                    </div>
+
+                    <div class="full-box">
+                        <label for="Lemail"> E-mail: </label>
                         <input name="email" type="text" placeholder="meuemail@provedor.com">
-                        <br>
-                        Senha:
+                        
+                    </div>
+
+                    <div class="half-box spacing">
+                        <label for="Lnumero"> numero: </label>
+                        <input type="text" name="numero" id="">
+                    </div>
+                        
+                    <div class="half-box spacing">
+                        <label for="Lcep"> CEP: </label>
+                        <input type="text" name="cep" id="">
+                    </div>
+
+                        <div class="half-box spacing">    
+                        <label for="Ltelefone"> Telefone: </label>
+                        <input type="text" name="telefone" id="">
+                    </div>
+
+                    <div class="half-box spacing">
+                        <label for="Lsenha"> Senha: </label>
                         <input name="senha" type="password" placeholder="******">
-                        <br>
-                        Confirmação da Senha:
+                    </div>
+
+                    <div class="half-box spacing">    
+                        <label for="Lconfirmacao-senha"> Confirmação da Senha: </label>
                         <input name="confirmacao-senha" type="password" placeholder="******">
-                        <br>
+                    </div>
+
+
                         <button class="btn">Cadastrar</button>
                     </form>
-                </div>
-                <div id="div_aguardar" class="loading-div">
-                    <img src="./assets/circle-loading.gif" id="loading-gif">
-                </div>
-
-                <div id="div_erros_login">
-                    
-                </div>
-            </div>
-        </div>
     </div>
 
     <!--footer inicio-->
-    <div class="footer">
+    <!-- <div class="footer">
         <div class="container">
             <h4>Feito com amor por um aluno BandTec &copy; 2021</h4>
         </div>
-    </div>
+    </div> -->
     <!--footer fim-->
     
 
@@ -99,17 +120,22 @@
     }
 
     function cadastrar() {
-        aguardar();
+        // aguardar();
 
         var formulario = new URLSearchParams(new FormData(document.getElementById("form_cadastro")));
 
         var nome = formulario.get("nome");
+        var cnpj = formulario.get("cnpj");
+        var rua = formulario.get("rua");
+        var numero = formulario.get("numero");
+        var cep = formulario.get("cep");
+        var telefone = formulario.get("telefone")
         var email = formulario.get("email");
         var senha = formulario.get("senha");
         var confirmacaoSenha = formulario.get("confirmacao-senha");
 
         // TODO: VERIFICAR AS VALIDAÇÕES QUE ELES ESTÃO APRENDENDO EM ALGORITMOS 
-        if (nome == "" || email == "" || senha == "" || confirmacaoSenha == "") {
+        if (nome == "" || cnpj == "" || rua == "" || numero == "" || cep == "" || telefone == "" || email == "" || senha == "" || confirmacaoSenha == "") {
             
             window.alert("Preencha todos os campos para prosseguir!");
             if (nome == "")  {
@@ -123,6 +149,21 @@
             }
             if (confirmacaoSenha == "" )  {
                 console.log('confirmacaoSenha está em branco')
+            }
+            if (cnpj == "") {
+                console.log('cnpj está em branco')
+            }
+            if (rua == "") {
+                console.log('Rua está em branco')
+            }
+            if (numero == "") {
+                console.log('Numero está em branco')
+            }
+            if (cep == "") {
+                console.log('cep está em branco')
+            }
+            if (telefone == "") {
+                console.log('telefone está em branco')
             }
             finalizarAguardar();
             return false;

@@ -61,6 +61,11 @@ function entrar (req, res) {
 
 function cadastrar(req, res) {
     var nome = req.body.nome;
+    var cnpj = req.body.cnpj;
+    var rua = req.body.rua;
+    var numero = req.body.numero;
+    var cep = req.body.cep;
+    var telefone = req.body.telefone;
     var email = req.body.email;
     var senha = req.body.senha;
 
@@ -70,8 +75,18 @@ function cadastrar(req, res) {
         res.status(400).send("Seu email está undefined!");
     } else if (senha == undefined) {
         res.status(400).send("Sua senha está undefined!");
+    } else if (cnpj == undefined) {
+        res.status(400).send("Insira o cnpj")
+    } else if (rua == undefined) {
+        res.status(400).send("Insira a rua")
+    } else if (numero == undefined) {
+        res.status(400).send("Insira o numero")
+    } else if (cep == undefined) {
+        res.status(400).send("Insira o numero do cep")
+    } else if (telefone == undefined) {
+        res.status(400).send("Insira o numero de telefone")
     } else {
-        usuarioModel.cadastrar(nome, email, senha)
+        usuarioModel.cadastrar(nome, cnpj, rua, numero, cep, telefone, email, senha)
         .then(
             function (resultado) {
                 res.json(resultado);
