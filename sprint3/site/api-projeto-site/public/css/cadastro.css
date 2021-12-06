@@ -7,6 +7,55 @@
     color: #323232;
 }
 
+.header {
+    height: 9vh;
+    background-color: #8b0000;
+}
+
+.header .container {
+    width: 80%;
+    height: 100%;
+    margin: auto;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.header .container h1 {
+    color: whitesmoke;
+    font-size: 60px;
+    text-decoration: none;
+}
+
+.navbar{  
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    color: white;
+}
+
+.navbar li{
+    margin-right: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover{
+   color: black;
+}
+
+.navbar .active{
+    font-weight: bolder;
+    cursor: pointer;
+}
+
 input, Llabel {
     display: block;
     width: 100%;
@@ -20,8 +69,14 @@ a {
     color: red;
 }
 
+.div_centralizar {
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body {
-    padding-top: 5vh;
     background-image: url(./fundo\ cadastro.jpg);
     background-size: cover;
 }
@@ -87,3 +142,14 @@ input:focus {
     cursor: pointer;
 }
 
+.footer {
+    background-color: #8b0000;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h4 {
+    color: white;
+}
