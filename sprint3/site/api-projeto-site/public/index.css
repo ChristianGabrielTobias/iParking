@@ -1,0 +1,245 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #E5E5E5;
+}
+
+.header{
+    height: 9vh;
+    background-color: #8b0000;
+}
+
+.container{
+    width: 80%;
+    height: 100%;
+    margin: auto;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.header .container h1 {
+    color: whitesmoke;
+    font-size: 60px;
+    text-decoration: none;
+}
+
+.navbar{  
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    color: white;
+}
+
+.navbar li{
+    margin-right: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover{
+   color: black;
+}
+
+.navbar .active{
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.banner {
+    height: 70vh;
+    width: 100%;
+    background-image: url('assets/imgs/estacionamento.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+}
+
+.divisao{
+    height: 5px;
+    background-color: black;
+}
+
+.conteudo{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+
+.about h1{
+    color: #FF2121;
+    margin-top: 90px;
+    font-size: 60px;
+    background-color: white;
+    width: 310px;
+    border-radius: 25px;
+    padding: 5px;
+}
+.about span{
+    font-size: 20px;
+}
+
+.but_saiba_mais{
+    border: 0px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    width: 200px;
+    height: 55px;
+    margin-left: 80%;
+    cursor:pointer;
+    border-radius: 5px;
+    box-shadow: rgb(24, 24, 24) 5px -9px 3px;
+}
+
+.but_saiba_mais a{
+    color:white;
+    text-decoration: none;
+}
+
+.but_saiba_mais a:hover{
+    color: rgb(245, 107, 107);
+}
+
+.proposito {
+    height: 52vh;
+    background-color: #E5E5E5;
+}
+
+.proposito .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proposito .container h2 {
+    background-color: white;
+    padding: 25px;
+    border-radius: 25px;
+    color: #FF2121;
+}
+
+.proposito .container .mvv div img {
+    height: 100px;  
+} 
+
+.proposito .container .mvv {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.proposito .container .mvv div {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.proposito .container .mvv div h3 {
+   color: #E6005A; 
+   font-weight: bolder;
+   margin: 25px 0;
+}
+
+#divisao3{
+    height: 5px;
+    background-color: #8b0000;
+}
+
+.conteudo2{
+    height: 40vh;
+    background-color: black;
+    display: flex;
+}
+
+.contato{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex; 
+}
+
+.fale_conosco{
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.ipt_nome{
+    width: 450px;
+    height: 24px;
+}
+
+.ipt_email{
+    width: 450px;
+    height: 24px;
+    
+}
+
+.ipt_telefone{
+    width: 450px;
+    height: 24px;
+}
+
+.ipt_assunto{
+    width: 450px;
+    height: 24px;
+}
+
+.area_desc{
+    width: 450px;
+}
+
+.but_enviar {
+    height: 25px;
+    width: 450px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    border: black 1px solid;
+}
+
+.but_enviar:hover{
+    background-color: #fa0707;
+}
+
+.footer {
+    color: white;
+    background-color: #8b0000;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
